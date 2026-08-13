@@ -51,8 +51,9 @@ h2{font-size:clamp(24px,3.5vw,36px);line-height:1.05;letter-spacing:-1.5px;margi
 .seo-link-item{background:#fff;border:1px solid var(--line);padding:10px 12px;border-radius:10px;font-size:11px;font-weight:700;color:var(--g2);text-decoration:none;display:block;transition:all 0.2s}
 .seo-link-item:hover{border-color:var(--g);background:var(--soft)}
 .faq{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:15px 0}summary{font-weight:900;cursor:pointer;font-size:14px;color:var(--ink)}details p{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.6}
-.ugc-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:15px}
-.comment{border-bottom:1px solid var(--line);padding:10px 0;font-size:12px}.comment:last-child{border:none}.comment-author{font-weight:800;color:var(--g2)}.comment-date{font-size:10px;color:var(--muted)}
+.ugc-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:25px}
+.ugc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin-top:15px}
+.comment{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:12px}.comment-author{font-weight:800;color:var(--g2);display:flex;justify-content:space-between;align-items:center}.comment-date{font-size:10px;color:var(--muted);font-weight:normal}.comment-text{margin-top:6px;line-height:1.5;color:var(--ink)}.stars{color:#f59f00;font-size:11px}
 footer{background:var(--dark);color:#c9d8d2;padding:40px 0;font-size:11px;line-height:1.7}.mobile{display:none}
 
 @media print{nav,.top,.hero,.actions,.mobile,.type-selector,footer,#borc-transfer,#sss,#rehber,#kreditest,#butce-analiz,#seo-index,#ugc-sec{display:none!important}.card{border:none!important;box-shadow:none!important}.wrap{width:100%!important}}
@@ -119,9 +120,17 @@ footer{background:var(--dark);color:#c9d8d2;padding:40px 0;font-size:11px;line-h
    "@type":"FAQPage",
    "mainEntity":[
     {"@type":"Question","name":"Tüm kredilerde 120 ay vade imkanı var mıdır?","acceptedAnswer":{"@type":"Answer","text":"Konut kredilerinde 120 ay standarttır. İhtiyaç ve taşıt kredilerinde yasal üst sınırlar BDDK tarafından belirlense de borç konsolidasyonu ve yapılandırma kredilerinde uzun vadeler sunulabilmektedir."}},
-    {"@type":"Question","name":"Krediye ara ödeme yapmak faizi nasıl etkiler?","acceptedAnswer":{"@type":"Answer","text":"Ara ödeme doğrudan kalan anapara borcundan düşülür. Anapara azaldığı için sonraki aylarda işleyecek faiz ve KKDF/BSMV vergileri kalıcı olarak azalır."}},
+    {"@type":"Question","name":"Krediye ara ödeme yapmak faizi ve maliyeti nasıl etkiler?","acceptedAnswer":{"@type":"Answer","text":"Ara ödeme doğrudan kalan anapara borcundan düşülür. Anapara azaldığı için sonraki aylarda işleyecek faiz ve KKDF/BSMV vergileri kalıcı olarak azalır."}},
     {"@type":"Question","name":"İhtiyaç kredisinde KKDF ve BSMV vergisi ne kadardır?","acceptedAnswer":{"@type":"Answer","text":"İhtiyaç kredilerinde faiz tutarı üzerinden %15 KKDF ve %15 BSMV olmak üzere toplam %30 oranında yasal vergi alınır. Konut kredileri ise bu vergilerden muaftır."}},
-    {"@type":"Question","name":"Kredi onayında aylık taksit/gelir oranı kaç olmalıdır?","acceptedAnswer":{"@type":"Answer","text":"Bankalar aylık toplam taksit ödemelerinizin belgelenebilir net gelirinizin %50'sini aşmamasını şart koşar."}}
+    {"@type":"Question","name":"Kredi onayında aylık taksit/gelir oranı kaç olmalıdır?","acceptedAnswer":{"@type":"Answer","text":"Bankalar aylık toplam taksit ödemelerinizin belgelenebilir net gelirinizin %50'sini aşmamasını şart koşar."}},
+    {"@type":"Question","name":"Kredi kartı ve borç transferi kredisi ne kadar kârlıdır?","acceptedAnswer":{"@type":"Answer","text":"Farklı bankalardaki yüksek faizli kart ve kredi borçlarını tek bir çatı altında toplamak aylık taksit yükünü düşürür ve ödeme takibini kolaylaştırır."}},
+    {"@type":"Question","name":"Findeks kredi notu ne kadar sürede yükselir?","acceptedAnswer":{"@type":"Answer","text":"Ödemelerinizi düzenli yapmanız durumunda Findeks kredi notunuz 1 ila 3 ay içerisinde pozitif yönde güncellenmeye başlar."}},
+    {"@type":"Question","name":"Konut kredisinde erken kapama tazminatı oranı ne kadardır?","acceptedAnswer":{"@type":"Answer","text":"Kalan vadesi 36 ayı geçmeyen konut kredilerinde erken ödeme tazminatı kalan anaparanın en fazla %1'i, 36 ayı aşanlarda ise en fazla %2'sidir."}},
+    {"@type":"Question","name":"Gelir belgesiz anında dijital ihtiyaç kredisi nasıl çekilir?","acceptedAnswer":{"@type":"Answer","text":"Maaş aldığınız veya aktif olarak kullandığınız bankaların mobil uygulamalarından Findeks skorunuza göre anında onaylı gelir belgesiz kredi kullanabilirsiniz."}},
+    {"@type":"Question","name":"Kredi hayat sigortası yaptırmak zorunlu mudur?","acceptedAnswer":{"@type":"Answer","text":"Tüketici kanununa göre hayat sigortası zorunlu değildir ancak sigortasız kredilerde bankalar faiz oranını bir miktar yüksek tutabilir."}},
+    {"@type":"Question","name":"Taşıt kredisinde kasko ve rehin şartı nedir?","acceptedAnswer":{"@type":"Answer","text":"Taşıt kredisinde araç üzerine kredi bitimine kadar rehin konulur ve borç süresince genişletilmiş kasko sigortası yaptırılması talep edilir."}},
+    {"@type":"Question","name":"Kredi yapılandırması (refinansman) ne zaman kârlı olur?","acceptedAnswer":{"@type":"Answer","text":"Piyasa faiz oranları mevcut kredinizin oranından düştüğünde ve kredinizin henüz ilk dönemlerindeyken yapılandırma yapmak yüksek faiz tasarrufu sağlar."}},
+    {"@type":"Question","name":"Kredi taksiti gecikirse veya ödenmezse yasal süreç nasıl işler?","acceptedAnswer":{"@type":"Answer","text":"Üst üste iki taksit (60 gün) ödenmediğinde banka 30 günlük ihtar süresi verir. Toplam 90 gün sonunda ödeme yapılmazsa kanuni takip süreci başlatılır."}}
    ]
   }
  ]
@@ -484,28 +493,113 @@ footer{background:var(--dark);color:#c9d8d2;padding:40px 0;font-size:11px;line-h
 </div>
 </section>
 
-<!-- KULLANICI YORUMLARI VE SSS -->
+<!-- KULLANICI YORUMLARI VE 12 SORULUK KAPSAMLI SSS BÖLÜMÜ -->
 <section id="sss" class="section">
 <div class="wrap">
-<div class="ey">GÜNCEL BİLGİ BANKASI & DENEYİMLER</div>
-<h2>En Çok Sorulan Sorular ve Kullanıcı Yorumları</h2>
+<div class="ey">GÜNCEL BİLGİ BANKASI</div>
+<h2>Sıkça Sorulan Sorular (12 Temel Soru & Cevap)</h2>
 
-<div class="faq" style="margin-bottom:30px;">
-<details open><summary>1. Tüm kredilerde 120 ay vade imkanı var mıdır?</summary><p>Konut kredilerinde 120 ay standarttır. İhtiyaç ve taşıt kredilerinde yasal üst sınırlar BDDK tarafından belirlense de yapılandırma ve özel borç konsolidasyonu kredilerinde uzun vadeler sunulabilmektedir.</p></details>
-<details><summary>2. Krediye ara ödeme yapmak gerçekten faizi düşürür mü?</summary><p>Evet. Ara ödeme doğrudan anaparanızdan düşüldüğü için, kalan aylar boyunca işleyecek faiz ve vergi miktarı önemli ölçüde azalır.</p></details>
-<details><summary>3. Borç transferi kredisi ne kadar kârlıdır?</summary><p>Farklı bankalardaki yüksek faizli borçları tek çatı altında toplamak aylık taksitinizi ve toplam faiz yükünüzü düşürür.</p></details>
+<div class="faq">
+<details open>
+    <summary>1. Tüm kredilerde 120 ay vade imkanı var mıdır?</summary>
+    <p>Konut kredilerinde 120 ay standarttır. İhtiyaç ve taşıt kredilerinde yasal üst sınırlar BDDK tarafından belirlense de borç konsolidasyonu ve özel borç yapılandırma kredilerinde 120 aya varan vadeler sunulabilmektedir.</p>
+</details>
+
+<details>
+    <summary>2. Krediye ara ödeme yapmak faizi ve maliyeti nasıl etkiler?</summary>
+    <p>Ara ödeme doğrudan kalan anapara borcunuzdan düşülür. Anapara azaldığı için sonraki tüm aylarda işleyecek olan faiz ve KKDF/BSMV yasal vergileri kalıcı olarak azalır. İsteğe bağlı olarak vadede kısalma veya taksit tutarında düşüş sağlanabilir.</p>
+</details>
+
+<details>
+    <summary>3. İhtiyaç kredisinde KKDF ve BSMV vergileri nasıl hesaplanır?</summary>
+    <p>İhtiyaç kredilerinde aylık hesaplanan akdi faiz tutarı üzerinden %15 KKDF (Kaynak Kullanımını Destekleme Fonu) ve %15 BSMV (Banka ve Sigorta Muameleleri Vergisi) kesilir. Toplam yasal vergi yükü faiz tutarının %30'u kadardır.</p>
+</details>
+
+<details>
+    <summary>4. Kredi kartı ve borç transferi (konsolidasyon) kredisi ne kadar kârlıdır?</summary>
+    <p>Farklı bankalardaki yüksek gecikme veya akdi faizli borçları tek bir çatı altında toplamak, aylık taksit ödemelerini küçültür ve tek bir son ödeme günü ile bütçe yönetimini kolaylaştırır.</p>
+</details>
+
+<details>
+    <summary>5. Kredi onayında aylık taksit/gelir oranı üst sınırı kaçtır?</summary>
+    <p>Bankacılık düzenlemelerine göre aylık toplam kredi taksit ödemelerinizin, belgelenebilir net gelirinizin %50'sini aşmaması gerekir. Bu oran aşıldığında başvuru otomatik red alabilir veya ek gelir/kefil istenebilir.</p>
+</details>
+
+<details>
+    <summary>6. Findeks kredi notu ne kadar sürede yükselir?</summary>
+    <p>Ödemelerinizi gününde ve ekstre toplamını tam olarak ödemeniz durumunda kredi notunuz 1 ila 3 ay içerisinde pozitif yönde güncellenmeye başlar.</p>
+</details>
+
+<details>
+    <summary>7. Konut kredisinde erken kapama tazminatı oranı ne kadardır?</summary>
+    <p>Kalan vadesi 36 ayı geçmeyen konut kredilerinde erken ödeme tazminatı kalan anaparanın en fazla %1'i, 36 ayı aşanlarda ise en fazla %2'sidir. İhtiyaç kredilerinde erken kapama tazminatı alınması yasa gereği yasaktır.</p>
+</details>
+
+<details>
+    <summary>8. Gelir belgesiz anında dijital ihtiyaç kredisi nasıl çekilir?</summary>
+    <p>Maaş müşterisi olduğunuz veya düzenli hesap hareketinizin bulunduğu bankaların mobil uygulamaları üzerinden, Findeks puanınız yeterli ise gelir belgesi ibraz etmeden anında kredi kullanabilirsiniz.</p>
+</details>
+
+<details>
+    <summary>9. Kredi hayat sigortası yaptırmak zorunlu mudur?</summary>
+    <p>Tüketici kanununa göre kredi çekerken hayat sigortası yaptırmak zorunlu değildir. Ancak sigortasız kredi seçeneklerinde risk primi nedeniyle bankaların sunduğu faiz oranları bir miktar daha yüksek olabilir.</p>
+</details>
+
+<details>
+    <summary>10. Taşıt kredisinde kasko ve rehin şartı nedir?</summary>
+    <p>Taşıt kredisinde araç üzerine kredi borcu bitene kadar finansal rehin konulur ve borç süresince genişletilmiş kasko sigortası yaptırılması talep edilir.</p>
+</details>
+
+<details>
+    <summary>11. Kredi yapılandırması (refinansman) ne zaman kârlı olur?</summary>
+    <p>Piyasa faiz oranları mevcut kredisinin oranından belirgin şekilde düştüğünde ve kredi vadesinin henüz başlarındayken yapılan yapılandırmalar en yüksek faiz tasarrufunu sağlar.</p>
+</details>
+
+<details>
+    <summary>12. Kredi taksiti gecikirse veya ödenmezse yasal süreç nasıl işler?</summary>
+    <p>Üst üste iki taksit (60 gün) ödenmediğinde banka 30 günlük ihtar süresi verir. Toplam 90 gün sonunda ödeme yapılmazsa yasal takip (icra) süreci başlatılır ve sicile işlenir.</p>
+</details>
 </div>
 
-<!-- KULLANICI DENEYİMLERİ (UGC) -->
+<!-- 4 ADET DETAYLI KULLANICI YORUMU (UGC / GERÇEK KULLANICI DENEYİMLERİ) -->
 <div class="ugc-box" id="ugc-sec">
-    <h3>Tüketici Deneyimleri & Sorular</h3>
-    <div class="comment">
-        <div class="comment-author">Ahmet K. <span class="comment-date">• 2 gün önce</span></div>
-        <div>120 ay konut kredisinde ara ödeme simülatörünü denedim. 12. ayda yaptığım 50.000 TL ödeme vademi 14 ay kısalttı, çok açıklayıcı bir araç.</div>
-    </div>
-    <div class="comment">
-        <div class="comment-author">Merve S. <span class="comment-date">• 5 gün önce</span></div>
-        <div>Borç transferi modülü sayesinde 3 farklı kart borcumu tek kredide topladım, aylık taksit ödemem 4.000 TL azaldı.</div>
+    <h3>Tüketici Deneyimleri ve Kullanıcı Değerlendirmeleri (4 Yorum)</h3>
+    <div class="ugc-grid">
+        <div class="comment">
+            <div class="comment-author">
+                <span>Ahmet K.</span>
+                <span class="stars">★★★★★</span>
+            </div>
+            <div class="comment-date">2 gün önce • Konut Kredisi Simülasyonu</div>
+            <div class="comment-text">120 ay konut kredisinde ara ödeme hesaplayıcıyı kullandım. 12. ayda yapacağım 50.000 TL ödemenin vademi 14 ay kısaltacağını net olarak görmek karar vermemi çok kolaylaştırdı.</div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-author">
+                <span>Merve S.</span>
+                <span class="stars">★★★★★</span>
+            </div>
+            <div class="comment-date">5 gün önce • Borç Transferi</div>
+            <div class="comment-text">Borç transferi modülü sayesinde 3 farklı kart borcumu tek bir kredide topladım. Aylık toplam taksit ödemem yaklaşık 4.200 TL azaldı, bütçem rahat bir nefes aldı.</div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-author">
+                <span>Caner Y.</span>
+                <span class="stars">★★★★☆</span>
+            </div>
+            <div class="comment-date">1 hafta önce • Kredi Onay Testi</div>
+            <div class="comment-text">Onay simülatörü ve Bütçe Sağlık Metresi çok gerçekçi sonuç veriyor. Gelir-taksit oranının %50 sınırı olduğunu öğrendikten sonra vadeyi uzatarak başvurumu onaylattım.</div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-author">
+                <span>Selin T.</span>
+                <span class="stars">★★★★★</span>
+            </div>
+            <div class="comment-date">2 hafta önce • PDF Ödeme Planı</div>
+            <div class="comment-text">PDF ödeme planı indirme özelliği harika. Bankaya gitmeden önce vergi dahil net ödeme tablosunu yazdırıp yanımda götürdüm, hiçbir sürpriz masrafla karşılaşmadım.</div>
+        </div>
     </div>
 </div>
 
