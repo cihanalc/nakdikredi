@@ -1,4 +1,12 @@
+# NakdiKredi.com Robots.txt
 User-agent: *
 Allow: /
 
+# Arama motorlarının gereksiz parametre veya çıktı yükü yaşamasını önleme
+Disallow: /*?*tutar=
+Disallow: /*?*vade=
+Disallow: /*?*faiz=
+Disallow: /*?*tur=
+
+# XML Site Haritası Konumu
 Sitemap: https://nakdikredi.com/sitemap.xml
