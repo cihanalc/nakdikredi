@@ -1,1038 +1,255 @@
-
 <!doctype html>
 <html lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Nakdi Kredi | Kredi, Finans ve Kredi Hesaplama</title>
-
-<meta name="description" content="Nakdi kredi, nakit kredi, ihtiyaç kredisi, kredi hesaplama, kredi faiz oranları, kredi başvurusu ve kredi karşılaştırma hakkında kapsamlı finans rehberi.">
-
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-
+<title>Nakdi Kredi Hesaplama 2026 | Kredi Taksit ve Faiz Hesaplama</title>
+<meta name="description" content="Nakdi kredi hesaplama: kredi taksiti, faiz, toplam geri ödeme, vade, kredi maliyeti ve ödeme planını hesaplayın. İhtiyaç kredisi hakkında güncel ve kapsamlı rehber.">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://nakdikredi.com/">
-
+<meta property="og:title" content="Nakdi Kredi Hesaplama | Kredi Taksit ve Faiz Hesaplama">
+<meta property="og:description" content="Kredi taksitinizi, toplam geri ödemenizi ve ödeme planınızı hesaplayın.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Nakdi Kredi | Kredi, Finans ve Kredi Hesaplama">
-<meta property="og:description" content="Kredi, nakdi kredi, kredi hesaplama ve finans hakkında bilgilendirici içerikler.">
 <meta property="og:url" content="https://nakdikredi.com/">
-
-<meta name="theme-color" content="#06101b">
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"WebSite",
- "name":"Nakdi Kredi",
- "url":"https://nakdikredi.com/",
- "description":"Kredi, nakdi kredi, ihtiyaç kredisi, kredi hesaplama ve finans hakkında bilgilendirici içerikler.",
- "inLanguage":"tr-TR"
-}
-</script>
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"Organization",
- "name":"Nakdi Kredi",
- "url":"https://nakdikredi.com/"
-}
-</script>
-
 <style>
-
-:root{
---bg:#06101b;
---text:#f7f9fb;
---muted:#96a6b6;
---line:rgba(255,255,255,.09);
---mint:#5ee6b7;
---mint2:#baf7e2;
-}
-
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Inter,Arial,sans-serif;
-background:var(--bg);
-color:var(--text);
-line-height:1.65;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-.container{
-width:min(1160px,92%);
-margin:auto;
-}
-
-/* NAV */
-
-nav{
-position:fixed;
-z-index:50;
-top:0;
-width:100%;
-background:rgba(6,16,27,.84);
-backdrop-filter:blur(18px);
-border-bottom:1px solid var(--line);
-}
-
-.nav{
-height:72px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-}
-
-.logo{
-font-size:21px;
-font-weight:900;
-}
-
-.logo span,
-h1 span,
-.band span{
-color:var(--mint);
-}
-
-.nav a:last-child{
-font-size:13px;
-font-weight:800;
-color:var(--mint2);
-border:1px solid rgba(94,230,183,.3);
-padding:9px 15px;
-border-radius:8px;
-}
-
-/* HERO */
-
-.hero{
-padding:145px 0 95px;
-position:relative;
-background:
-radial-gradient(circle at 80% 25%,rgba(94,230,183,.14),transparent 30%),
-radial-gradient(circle at 10% 80%,rgba(255,255,255,.04),transparent 25%);
-}
-
-.hero:after{
-content:"";
-position:absolute;
-inset:0;
-pointer-events:none;
-opacity:.22;
-background-image:
-linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
-linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
-background-size:70px 70px;
-}
-
-.hero-grid{
-position:relative;
-z-index:2;
-display:grid;
-grid-template-columns:1.1fr .9fr;
-gap:65px;
-align-items:center;
-}
-
-.eyebrow,
-.kicker{
-font-size:11px;
-color:var(--mint);
-font-weight:900;
-letter-spacing:2px;
-text-transform:uppercase;
-margin-bottom:15px;
-}
-
-h1{
-font-size:clamp(48px,7vw,88px);
-line-height:.94;
-letter-spacing:-5px;
-}
-
-.hero p{
-font-size:18px;
-color:#b6c3ce;
-max-width:720px;
-margin:27px 0 30px;
-}
-
-.btn{
-display:inline-block;
-background:var(--mint);
-color:#06131d;
-padding:14px 20px;
-border-radius:8px;
-font-weight:900;
-font-size:14px;
-}
-
-/* DOMAIN CARD */
-
-.card{
-border:1px solid rgba(94,230,183,.2);
-border-radius:22px;
-padding:31px;
-background:
-linear-gradient(145deg,rgba(94,230,183,.09),rgba(255,255,255,.025));
-box-shadow:0 30px 90px rgba(0,0,0,.28);
-}
-
-.card small{
-color:#738495;
-text-transform:uppercase;
-letter-spacing:1.5px;
-font-weight:800;
-}
-
-.domain{
-font-size:clamp(30px,4vw,46px);
-font-weight:950;
-letter-spacing:-2px;
-margin:15px 0 20px;
-}
-
-.domain span{
-color:var(--mint);
-}
-
-.rule{
-height:1px;
-background:var(--line);
-margin:18px 0;
-}
-
-.row{
-display:flex;
-justify-content:space-between;
-font-size:13px;
-gap:20px;
-}
-
-.row span:first-child{
-color:#718293;
-}
-
-.row span:last-child{
-font-weight:800;
-}
-
-/* SECTIONS */
-
-section{
-padding:100px 0;
-}
-
-h2{
-font-size:clamp(34px,5vw,57px);
-line-height:1.05;
-letter-spacing:-3px;
-max-width:850px;
-}
-
-.lead{
-color:var(--muted);
-font-size:17px;
-max-width:760px;
-margin-top:18px;
-}
-
-.head{
-margin-bottom:45px;
-}
-
-/* CARDS */
-
-.grid3{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:15px;
-}
-
-.box{
-border:1px solid var(--line);
-border-radius:15px;
-padding:27px;
-background:rgba(255,255,255,.035);
-}
-
-.box h3{
-font-size:19px;
-margin:12px 0 9px;
-}
-
-.box p{
-font-size:14px;
-color:var(--muted);
-}
-
-.num{
-color:var(--mint);
-font-size:11px;
-font-weight:900;
-}
-
-/* BAND */
-
-.band{
-border-top:1px solid var(--line);
-border-bottom:1px solid var(--line);
-background:rgba(255,255,255,.012);
-padding:75px 0;
-}
-
-.band-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:70px;
-}
-
-.band h2{
-font-size:clamp(30px,4vw,49px);
-}
-
-.band p{
-color:var(--muted);
-}
-
-/* TOPICS */
-
-.topics{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:12px;
-}
-
-.topic{
-padding:23px;
-border:1px solid var(--line);
-border-radius:13px;
-background:rgba(255,255,255,.025);
-}
-
-.topic strong{
-display:block;
-font-size:16px;
-margin-bottom:8px;
-}
-
-.topic span{
-color:var(--muted);
-font-size:13px;
-}
-
-/* CONTENT */
-
-.content{
-max-width:900px;
-}
-
-.content h3{
-font-size:24px;
-margin:34px 0 9px;
-}
-
-.content p{
-font-size:15px;
-color:var(--muted);
-}
-
-.content strong{
-color:#e8edf1;
-}
-
-/* FAQ */
-
-.faq{
-display:grid;
-gap:10px;
-max-width:900px;
-}
-
-.faq details{
-border:1px solid var(--line);
-border-radius:12px;
-background:rgba(255,255,255,.025);
-padding:18px 20px;
-}
-
-.faq summary{
-cursor:pointer;
-font-weight:800;
-}
-
-.faq p{
-color:var(--muted);
-font-size:14px;
-padding-top:12px;
-}
-
-/* KEYWORDS */
-
-.keywords{
-border-top:1px solid var(--line);
-padding-top:40px;
-margin-top:60px;
-}
-
-.keywords h3{
-font-size:16px;
-margin-bottom:15px;
-}
-
-.tags{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-}
-
-.tag{
-font-size:12px;
-color:#8495a5;
-border:1px solid var(--line);
-padding:7px 10px;
-border-radius:999px;
-}
-
-/* CTA */
-
-.cta{
-text-align:center;
-padding:110px 0;
-background:
-radial-gradient(circle at 50% 45%,rgba(94,230,183,.11),transparent 43%);
-}
-
-.cta h2{
-margin:auto;
-}
-
-.cta p{
-color:var(--muted);
-max-width:620px;
-margin:18px auto 28px;
-}
-
-/* FOOTER */
-
-footer{
-border-top:1px solid var(--line);
-padding:28px 0;
-color:#657688;
-font-size:12px;
-}
-
-.foot{
-display:flex;
-justify-content:space-between;
-}
-
-/* MOBILE */
-
-@media(max-width:850px){
-
-.hero-grid,
-.band-grid{
-grid-template-columns:1fr;
-}
-
-.grid3{
-grid-template-columns:1fr;
-}
-
-.topics{
-grid-template-columns:1fr 1fr;
-}
-
-.hero-grid{
-gap:40px;
-}
-
-}
-
-@media(max-width:520px){
-
-h1{
-letter-spacing:-3px;
-}
-
-.topics{
-grid-template-columns:1fr;
-}
-
-.hero{
-padding-top:120px;
-}
-
-section{
-padding:78px 0;
-}
-
-.foot{
-flex-direction:column;
-gap:8px;
-}
-
-}
-
+:root{--g:#087c4d;--g2:#064c32;--ink:#102019;--muted:#66756e;--bg:#f4f8f6;--white:#fff;--line:#dbe7e1;--soft:#e7f5ed;--dark:#08150f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{width:min(1160px,92%);margin:auto}.top{background:var(--dark);color:#d9e6e1;font-size:11px;padding:8px}.top .wrap{display:flex;justify-content:space-between}
+nav{position:sticky;top:0;z-index:10;background:#f4f8f6ee;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:950;color:var(--ink);text-decoration:none;letter-spacing:-1px}.logo b{color:var(--g)}.links{display:flex;gap:18px}.links a{font-size:11px;font-weight:900;text-decoration:none;color:var(--ink)}
+.btn{display:inline-block;border:0;border-radius:12px;background:var(--g2);color:#fff;padding:12px 17px;font-weight:900;text-decoration:none;cursor:pointer}.btn.alt{background:var(--soft);color:var(--g2)}
+.hero{padding:72px 0 50px;background:radial-gradient(circle at 85% 10%,#d7f2e4,transparent 36%),linear-gradient(#fbfdfc,#fff)}.ey{font-size:10px;letter-spacing:2px;color:var(--g2);font-weight:950}.hero h1{font-size:clamp(42px,7vw,76px);line-height:.94;letter-spacing:-4px;max-width:950px;margin:14px 0}.green{color:var(--g)}.lead{font-size:17px;line-height:1.7;color:var(--muted);max-width:820px}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}.chip{background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 11px;font-size:10px;font-weight:850}
+.section{padding:68px 0}.section.alt{background:#edf6f1}.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 12px 40px #0b35220b}
+h2{font-size:clamp(31px,5vw,52px);line-height:1;letter-spacing:-2.7px;margin:10px 0 16px}h3{margin:0 0 9px}.muted{color:var(--muted);line-height:1.75}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;font-size:9px;font-weight:950;color:var(--muted);margin-bottom:6px}.field input,.field select{width:100%;padding:13px;border:1px solid #c9d9d1;border-radius:12px;background:#fff;font:inherit}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:15px}.stat{background:var(--soft);border-radius:14px;padding:13px}.stat small{font-size:8px;color:var(--muted);font-weight:950}.stat strong{display:block;font-size:18px;margin-top:4px}
+.notice{background:#fff7e6;border:1px solid #ecd5a3;color:#705628;border-radius:12px;padding:11px;font-size:10px;line-height:1.55;margin-top:14px}.result{font-size:38px;font-weight:950}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:16px}.table{border-collapse:collapse;width:100%;min-width:650px;font-size:11px}.table th,.table td{padding:9px;border-bottom:1px solid var(--line);text-align:right}.table th:first-child,.table td:first-child{text-align:left}.table th{background:var(--soft);font-size:9px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.mini{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px}.mini p{font-size:11px;color:var(--muted);line-height:1.65}.mini a{font-size:10px;color:var(--g2);font-weight:950;text-decoration:none}
+.article{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;margin-top:12px}.article h3{margin-top:25px}.article h3:first-child{margin-top:0}.article p,.article li{color:#52635b;line-height:1.8;font-size:14px}.article ul{padding-left:20px}.toc{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.toc a{background:var(--soft);border-radius:12px;padding:12px;text-decoration:none;color:var(--g2);font-size:11px;font-weight:850}
+.faq{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:17px 0}summary{font-weight:900;cursor:pointer}.searchbox{display:flex;gap:8px}.searchbox input{flex:1;border:1px solid var(--line);border-radius:12px;padding:13px}
+footer{background:var(--dark);color:#c9d8d2;padding:45px 0;font-size:11px;line-height:1.7}.mobile{display:none}
+@media(max-width:850px){.links{display:none}.grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.toc{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.top .wrap{display:block;text-align:center}.hero{padding-top:48px}.hero h1{letter-spacing:-2.5px}.fields,.cards,.stats,.toc{grid-template-columns:1fr}.mobile{display:grid;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;border-top:1px solid var(--line);grid-template-columns:repeat(4,1fr)}.mobile a{text-align:center;text-decoration:none;color:var(--ink);font-size:8px;font-weight:900;padding:9px}footer{padding-bottom:75px}}
 </style>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
+  {"@type":"WebSite","name":"NakdiKredi.com","url":"https://nakdikredi.com/","potentialAction":{"@type":"SearchAction","target":"https://nakdikredi.com/?q={search_term_string}","query-input":"required name=search_term_string"}},
+  {"@type":"WebApplication","name":"Nakdi Kredi Hesaplama","url":"https://nakdikredi.com/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"}},
+  {"@type":"FAQPage","mainEntity":[
+   {"@type":"Question","name":"Kredi taksiti nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Kredi tutarı, aylık faiz oranı ve vade kullanılarak tahmini eşit taksit hesaplanabilir. Gerçek maliyet ürün koşullarına göre değişebilir."}},
+   {"@type":"Question","name":"100.000 TL kredinin aylık taksiti ne kadar?","acceptedAnswer":{"@type":"Answer","text":"Aylık taksit; faiz oranı, vade ve kredi ürününe göre değişir. NakdiKredi hesaplayıcısında bu değerler değiştirilerek tahmini ödeme görülebilir."}},
+   {"@type":"Question","name":"Kredi vadesi uzarsa ne olur?","acceptedAnswer":{"@type":"Answer","text":"Vade uzadıkça aylık taksit genellikle azalırken toplam faiz ve geri ödeme artabilir."}},
+   {"@type":"Question","name":"Kredi faiz oranı neden önemlidir?","acceptedAnswer":{"@type":"Answer","text":"Faiz oranı aylık taksitin ve toplam geri ödemenin hesaplanmasında temel girdilerden biridir."}},
+   {"@type":"Question","name":"Erken ödeme kredinin maliyetini azaltır mı?","acceptedAnswer":{"@type":"Answer","text":"Kredinin kalan vadesine ve sözleşme koşullarına bağlı olarak gelecekte ödenecek faiz yükü azalabilir; kesin kapama tutarı ilgili kuruluş tarafından belirlenir."}},
+   {"@type":"Question","name":"Kredi notu kredi faizini etkiler mi?","acceptedAnswer":{"@type":"Answer","text":"Finans kuruluşları başvuru değerlendirmelerinde kredi geçmişi ve kendi risk kriterleri dahil çeşitli bilgileri kullanabilir."}}
+  ]
+ }
+}
+</script>
 </head>
 
 <body>
-
-<nav>
-<div class="container nav">
-
-<a class="logo" href="/">
-Nakdi<span>Kredi</span>.com
-</a>
-
-<a href="#iletisim">
-İletişim
-</a>
-
-</div>
-</nav>
-
+<div class="top"><div class="wrap"><span>NakdiKredi.com • Kredi hesaplama araçları</span><span>Sonuçlar tahmini ve bilgilendirme amaçlıdır</span></div></div>
+<nav><div class="wrap nav"><a class="logo" href="#">Nakdi<b>Kredi</b>.com</a><div class="links"><a href="#hesapla">Hesapla</a><a href="#konular">Kredi Konuları</a><a href="#rehber">Rehber</a><a href="#sss">SSS</a></div><a class="btn" href="#hesapla">Kredi Hesapla</a></div></nav>
 
 <header class="hero">
-
-<div class="container hero-grid">
-
-<div>
-
-<div class="eyebrow">
-Kredi • Finans • Fintech
+<div class="wrap">
+<div class="ey">NAKDİ KREDİ • KREDİ HESAPLAMA</div>
+<h1>Kredinin taksidini değil, <span class="green">gerçek maliyetini</span> anlamaya çalış.</h1>
+<p class="lead">Kredi tutarı, vade ve faiz oranını girerek aylık taksitini, toplam geri ödemeni, toplam faizini ve aylık ödeme planını saniyeler içinde hesapla.</p>
+<div class="chips"><span class="chip">Kredi hesaplama</span><span class="chip">Kredi taksit hesaplama</span><span class="chip">Kredi faiz hesaplama</span><span class="chip">İhtiyaç kredisi</span><span class="chip">Kredi geri ödeme</span><span class="chip">Erken ödeme</span><span class="chip">Kredi notu</span></div>
 </div>
-
-<h1>
-Nakdi Kredi<br>
-<span>ve finansın dijital adresi.</span>
-</h1>
-
-<p>
-
-<strong>Nakdi kredi</strong>,
-<strong>nakit kredi</strong>,
-<strong>ihtiyaç kredisi</strong>,
-<strong>kredi hesaplama</strong>,
-<strong>kredi faiz oranları</strong> ve
-<strong>kredi başvurusu</strong> gibi finansal konular hakkında bilgi arayanlar için güçlü bir dijital marka.
-
-</p>
-
-<a class="btn" href="#rehber">
-Kredi rehberini keşfet →
-</a>
-
-</div>
-
-
-<div class="card">
-
-<small>
-Premium finans domaini
-</small>
-
-<div class="domain">
-Nakdi<span>Kredi</span>.com
-</div>
-
-<div class="rule"></div>
-
-<div class="row">
-<span>Kategori</span>
-<span>Finans / Kredi</span>
-</div>
-
-<div class="rule"></div>
-
-<div class="row">
-<span>Uzantı</span>
-<span>.com</span>
-</div>
-
-<div class="rule"></div>
-
-<div class="row">
-<span>Konum</span>
-<span>Türkiye</span>
-</div>
-
-</div>
-
-</div>
-
 </header>
 
-
-<section id="rehber">
-
-<div class="container">
-
-<div class="head">
-
-<div class="kicker">
-Kredi rehberi
+<section id="hesapla" class="section" style="padding-top:30px">
+<div class="wrap grid">
+<div class="card">
+<div class="ey">ANA KREDİ HESAPLAYICI</div><h2 style="font-size:35px">Kredini hesapla.</h2>
+<div class="fields">
+<div class="field"><label>KREDİ TUTARI (TL)</label><input id="amount" type="number" value="100000" step="1000"></div>
+<div class="field"><label>VADE</label><select id="term"><option>6</option><option>12</option><option>18</option><option>24</option><option selected>36</option><option>48</option><option>60</option><option>72</option><option>84</option><option>120</option></select></div>
+<div class="field"><label>AYLIK FAİZ (%)</label><input id="rate" type="number" value="3.19" step=".01"></div>
+<div class="field"><label>AYLIK GELİR (OPSİYONEL)</label><input id="income" type="number" value="40000" step="1000"></div>
 </div>
-
-<h2>
-Nakdi kredi nedir?
-</h2>
-
-<p class="lead">
-
-<strong>Nakdi kredi</strong>, finansal kuruluşlardan belirli koşullar ve geri ödeme planı kapsamında alınan, müşterinin kullanımına sunulan para niteliğindeki kredi türlerini ifade eden genel bir finans terimidir.
-
-Kredi türleri, faiz oranları, vade, toplam geri ödeme ve başvuru şartları ürüne ve kuruma göre değişebilir.
-
-</p>
-
+<div class="actions"><button class="btn" onclick="calculate()">Hesapla</button><button class="btn alt" onclick="share()">Senaryoyu paylaş</button></div>
+<div class="stats"><div class="stat"><small>AYLIK TAKSİT</small><strong id="monthly">—</strong></div><div class="stat"><small>TOPLAM GERİ ÖDEME</small><strong id="total">—</strong></div><div class="stat"><small>TOPLAM FAİZ</small><strong id="interest">—</strong></div></div>
+<div class="notice">Bu hesaplama örnek matematiksel varsayımlara dayanır. Vergi, sigorta, tahsis ücreti ve diğer ürün koşulları gerçek maliyeti değiştirebilir.</div>
 </div>
-
-
-<div class="grid3">
-
-<div class="box">
-
-<div class="num">
-01
+<div class="card">
+<div class="ey">HIZLI HESAPLAMA</div><h3>Popüler kredi tutarları</h3>
+<div class="cards" style="grid-template-columns:1fr 1fr">
+<div class="mini"><button class="btn alt" onclick="quick(50000)">50.000 TL</button></div>
+<div class="mini"><button class="btn alt" onclick="quick(100000)">100.000 TL</button></div>
+<div class="mini"><button class="btn alt" onclick="quick(150000)">150.000 TL</button></div>
+<div class="mini"><button class="btn alt" onclick="quick(200000)">200.000 TL</button></div>
+<div class="mini"><button class="btn alt" onclick="quick(250000)">250.000 TL</button></div>
+<div class="mini"><button class="btn alt" onclick="quick(500000)">500.000 TL</button></div>
 </div>
-
-<h3>
-Nakit kredi
-</h3>
-
-<p>
-Nakit ihtiyacı için kullanılan kredi ürünleri ve bu ürünlerin temel özellikleri hakkında bilgi.
-</p>
-
+<p class="muted" id="summary"></p>
 </div>
-
-
-<div class="box">
-
-<div class="num">
-02
 </div>
-
-<h3>
-İhtiyaç kredisi
-</h3>
-
-<p>
-Kişisel harcamalar için sunulan kredi seçenekleri ve değerlendirme kriterleri.
-</p>
-
-</div>
-
-
-<div class="box">
-
-<div class="num">
-03
-</div>
-
-<h3>
-Kredi hesaplama
-</h3>
-
-<p>
-Kredi tutarı, vade, faiz oranı ve toplam geri ödeme gibi temel değişkenleri anlamaya yönelik rehber.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-
-<div class="band">
-
-<div class="container band-grid">
-
-<h2>
-Kredi kararında sadece faiz değil,
-<span>toplam maliyet</span> önemlidir.
-</h2>
-
-<p>
-
-Kredi araştırırken faiz oranının yanında vade, aylık taksit, toplam geri ödeme ve ilgili diğer maliyetlerin birlikte değerlendirilmesi gerekir.
-
-Güncel oranlar ve koşullar finans kuruluşuna ve ürüne göre değişebileceğinden başvuru öncesinde resmi kaynaklar kontrol edilmelidir.
-
-</p>
-
+<section class="section alt">
+<div class="wrap">
+<div class="ey">KREDİYİ SADECE TEK RAKAMLA DEĞERLENDİRME</div>
+<h2>Aynı kredi, farklı vade.</h2>
+<p class="muted">Vade değiştiğinde yalnızca aylık taksit değişmez. Toplam faiz ve geri ödeme de değişir. Bu yüzden kredi kararında “aylık kaç TL?” sorusunun yanında “toplam kaç TL ödeyeceğim?” sorusunu da görmek önemlidir.</p>
+<div class="cards">
+<div class="mini"><h3>Aylık taksit</h3><p>Her ay bütçenden çıkacak tahmini ödeme.</p></div>
+<div class="mini"><h3>Toplam geri ödeme</h3><p>Anapara ve hesaplanan faizlerin toplamı.</p></div>
+<div class="mini"><h3>Toplam faiz</h3><p>Seçtiğin varsayımlara göre kredi için oluşan faiz yükü.</p></div>
 </div>
-
 </div>
-
-
-<section>
-
-<div class="container">
-
-<div class="head">
-
-<div class="kicker">
-Kredi ve finans konuları
-</div>
-
-<h2>
-Finans bilgisi için güçlü bir içerik merkezi.
-</h2>
-
-<p class="lead">
-
-NakdiKredi.com; kredi araştıran kullanıcıların sık karşılaştığı finansal konular için içerik ve rehber altyapısı oluşturmak üzere tasarlanmıştır.
-
-</p>
-
-</div>
-
-
-<div class="topics">
-
-<div class="topic">
-<strong>Kredi faiz oranları</strong>
-<span>Faiz ve maliyet kavramlarını anlama.</span>
-</div>
-
-<div class="topic">
-<strong>Kredi başvurusu</strong>
-<span>Başvuru süreci hakkında genel bilgiler.</span>
-</div>
-
-<div class="topic">
-<strong>Kredi karşılaştırma</strong>
-<span>Teklifleri değerlendirirken bakılabilecek kriterler.</span>
-</div>
-
-<div class="topic">
-<strong>Kredi hesaplama</strong>
-<span>Taksit ve toplam geri ödeme mantığı.</span>
-</div>
-
-<div class="topic">
-<strong>Banka kredileri</strong>
-<span>Farklı kredi ürünlerinin genel yapısı.</span>
-</div>
-
-<div class="topic">
-<strong>İhtiyaç kredisi</strong>
-<span>Kişisel finansman seçenekleri.</span>
-</div>
-
-<div class="topic">
-<strong>Kredi vadesi</strong>
-<span>Vadenin ödeme ve maliyete etkisi.</span>
-</div>
-
-<div class="topic">
-<strong>Kişisel finans</strong>
-<span>Finansal kararlar ve kredi dünyası.</span>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-
-<section>
-
-<div class="container content">
-
-<div class="kicker">
-Finans sözlüğü
+<section class="section">
+<div class="wrap">
+<div class="ey">ÖDEME PLANI</div><h2>Kredinin her ayını gör.</h2>
+<div class="tablewrap"><table class="table"><thead><tr><th>Ay</th><th>Taksit</th><th>Anapara</th><th>Faiz</th><th>Kalan Borç</th><th>Kümülatif Faiz</th></tr></thead><tbody id="schedule"></tbody></table></div>
 </div>
-
-<h2>
-Nakdi kredi, kredi ve finans hakkında bilinmesi gerekenler
-</h2>
-
-
-<h3>
-Nakdi kredi ile ihtiyaç kredisi aynı şey midir?
-</h3>
-
-<p>
-
-“Nakdi kredi” daha geniş bir ifadeyken “ihtiyaç kredisi” belirli bir kredi ürününü ifade edebilir.
-
-Terminoloji finans kuruluşuna ve ürünün yapısına göre değişebilir.
-
-Kredi ürününün resmi açıklaması, faiz oranı, vadesi ve toplam geri ödeme bilgileri incelenmelidir.
-
-</p>
-
-
-<h3>
-Kredi hesaplama neden önemlidir?
-</h3>
-
-<p>
-
-<strong>Kredi hesaplama</strong>, yalnızca aylık taksiti görmekten ibaret değildir.
-
-Kredi tutarı, vade, faiz oranı ve krediye ilişkin diğer maliyetler toplam geri ödemeyi etkileyebilir.
-
-</p>
-
-
-<h3>
-Kredi başvurusu yapmadan önce nelere bakılmalı?
-</h3>
-
-<p>
-
-Kredi tutarı, vade, aylık ödeme, toplam geri ödeme, faiz oranı ve varsa ücretler değerlendirilmelidir.
-
-Başvuru şartları ve onay kriterleri kuruma ve ürüne göre değişebilir.
-
-</p>
-
-
-<h3>
-Kredi faiz oranları neden değişir?
-</h3>
-
-<p>
-
-Kredi faiz oranları ekonomik koşullar, finans kuruluşunun fiyatlama politikası, kredi ürünü, vade ve çeşitli değerlendirmelere göre değişebilir.
-
-Güncel oranlar için ilgili kuruluşun resmi kanalları esas alınmalıdır.
-
-</p>
-
-
-<div class="keywords">
-
-<h3>
-İlgili aramalar
-</h3>
-
-<div class="tags">
-
-<span class="tag">nakdi kredi</span>
-<span class="tag">nakit kredi</span>
-<span class="tag">ihtiyaç kredisi</span>
-<span class="tag">kredi</span>
-<span class="tag">kredi hesaplama</span>
-<span class="tag">kredi faiz oranları</span>
-<span class="tag">kredi başvurusu</span>
-<span class="tag">kredi karşılaştırma</span>
-<span class="tag">banka kredileri</span>
-<span class="tag">kredi taksit hesaplama</span>
-<span class="tag">kredi geri ödeme</span>
-<span class="tag">kredi vade</span>
-<span class="tag">finans</span>
-<span class="tag">kişisel finans</span>
-<span class="tag">fintech</span>
-<span class="tag">kredi maliyeti</span>
-<span class="tag">aylık kredi taksiti</span>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
+<section id="konular" class="section alt">
+<div class="wrap">
+<div class="ey">EN ÇOK MERAK EDİLEN KREDİ KONULARI</div>
+<h2>Kredi hakkında bilmek istediğin ne varsa.</h2>
+<div class="cards">
+<div class="mini"><h3>Kredi hesaplama</h3><p>Kredi tutarı, faiz ve vadenin taksit ile toplam geri ödemeye etkisi.</p><a href="#rehber">Rehberi oku →</a></div>
+<div class="mini"><h3>İhtiyaç kredisi</h3><p>İhtiyaç kredisi nedir, taksit nasıl hesaplanır, vade nasıl değerlendirilir?</p><a href="#ihtiyac">Oku →</a></div>
+<div class="mini"><h3>Kredi faiz oranı</h3><p>Aylık faiz oranının kredi maliyetine nasıl yansıdığını öğren.</p><a href="#faiz">Oku →</a></div>
+<div class="mini"><h3>Kredi notu</h3><p>Kredi notu nedir, hangi faktörlerden etkilenebilir ve neden önemlidir?</p><a href="#not">Oku →</a></div>
+<div class="mini"><h3>Erken ödeme</h3><p>Krediyi erken kapatmak veya ara ödeme yapmak ne anlama gelir?</p><a href="#erken">Oku →</a></div>
+<div class="mini"><h3>Kredi vadesi</h3><p>Kısa ve uzun vade arasında aylık ödeme ve toplam maliyet açısından fark.</p><a href="#vade">Oku →</a></div>
+<div class="mini"><h3>100.000 TL kredi</h3><p>100.000 TL kredi için farklı vade senaryolarını hesapla.</p><a href="#hesapla">Hesapla →</a></div>
+<div class="mini"><h3>200.000 TL kredi</h3><p>200.000 TL kredi için taksit ve toplam geri ödeme senaryosu oluştur.</p><a href="#hesapla">Hesapla →</a></div>
+<div class="mini"><h3>500.000 TL kredi</h3><p>Yüksek tutarlı kredi senaryosunda vade ve faiz etkisini incele.</p><a href="#hesapla">Hesapla →</a></div>
+</div>
+</div>
+</section>
 
-<section>
-
-<div class="container">
-
-<div class="head">
-
-<div class="kicker">
-Sık sorulan sorular
+<section id="rehber" class="section">
+<div class="wrap">
+<div class="ey">KAPSAMLI KREDİ REHBERİ</div>
+<h2>Kredi almadan önce bilinmesi gerekenler.</h2>
+<div class="toc">
+<a href="#ihtiyac">İhtiyaç kredisi nedir?</a><a href="#faiz">Faiz oranı nasıl okunur?</a><a href="#vade">Vade nasıl seçilir?</a><a href="#maliyet">Toplam maliyet nedir?</a><a href="#not">Kredi notu nedir?</a><a href="#erken">Erken ödeme nedir?</a>
 </div>
 
-<h2>
-Kredi hakkında merak edilenler
-</h2>
+<article class="article" id="ihtiyac">
+<h3>İhtiyaç kredisi nedir?</h3>
+<p>İhtiyaç kredisi, bireylerin çeşitli nakit ihtiyaçlarını karşılamak amacıyla kullandığı bireysel kredi türlerinden biridir. Ev eşyası, eğitim, sağlık giderleri, taşınma, tadilat veya farklı kişisel harcamalar için kullanılabilir. Kredi kullanmadan önce yalnızca aylık taksite değil; faiz oranına, toplam geri ödemeye, vade süresine ve krediyle bağlantılı diğer maliyetlere birlikte bakmak gerekir.</p>
+<p>Güncel kredi sitelerinde de kullanıcıların temel olarak kredi tutarı ve vade üzerinden ödeme hesabı yaptığı görülüyor. Örneğin hesap.com ihtiyaç kredisi sayfasında tutar ve vade üzerinden hesaplama sunuyor.</p>
+</article>
 
+<article class="article" id="faiz">
+<h3>Kredi faiz oranı nasıl okunur?</h3>
+<p>Kredi tekliflerinde görülen aylık faiz oranı, hesaplamanın en önemli girdilerinden biridir ancak tek başına kredinin bütün maliyetini ifade etmeyebilir. Vergiler, sigorta, tahsis ücreti ve ürünün diğer şartları gerçek geri ödeme tutarını etkileyebilir.</p>
+<p>Bu nedenle kredi değerlendirirken “aylık faiz kaç?” sorusunun yanında “toplam geri ödeme kaç TL?” sorusuna da bakmak daha anlamlıdır. Piyasadaki kredi rehberlerinde de faiz oranı ile toplam maliyetin birlikte değerlendirilmesi öneriliyor.</p>
+</article>
+
+<article class="article" id="vade">
+<h3>Kredi vadesi nasıl seçilir?</h3>
+<p>Vade, kredinin kaç ayda geri ödeneceğini ifade eder. Daha uzun vade aylık taksiti düşürebilir; ancak faiz daha uzun süre işlendiği için toplam geri ödeme yükselebilir. Daha kısa vade ise aylık taksiti artırabilir fakat toplam faiz yükünü azaltabilir.</p>
+<p>Bu nedenle en düşük taksiti bulmak her zaman en düşük maliyetli seçeneği bulmak anlamına gelmez. Aynı kredi tutarını farklı vadelerde hesaplayarak bütçene uygun noktayı görmek daha sağlıklı bir yaklaşımdır.</p>
+</article>
+
+<article class="article" id="maliyet">
+<h3>Toplam kredi maliyeti nedir?</h3>
+<p>Toplam kredi maliyeti, basitçe anapara ile faiz ve kredi ürününe bağlı diğer maliyetlerin birlikte değerlendirilmesini gerektirir. Sadece aylık taksite bakmak yanıltıcı olabilir: düşük taksit uzun vade nedeniyle daha yüksek toplam ödeme anlamına gelebilir.</p>
+<p>NakdiKredi hesaplayıcısında anapara, tahmini faiz ve toplam geri ödeme ayrı ayrı gösterilir. Gerçek teklif değerlendirilirken finans kuruluşunun sunduğu resmi ödeme planı esas alınmalıdır.</p>
+</article>
+
+<article class="article" id="not">
+<h3>Kredi notu nedir ve neden önemlidir?</h3>
+<p>Kredi notu, kredi geçmişi ve finansal davranışlarla ilgili risk değerlendirmelerinde kullanılan göstergelerden biridir. Finans kuruluşları kredi başvurularında kendi değerlendirme kriterlerini de kullanır. Bu nedenle yüksek veya düşük bir kredi notu tek başına kesin kredi onayı anlamına gelmez.</p>
+<p>Kredi başvurusu düşünüyorsan ödeme geçmişini düzenli tutmak, mevcut borçlarını yönetmek ve bütçenin kaldırabileceği taksit seviyesini dikkate almak önemlidir.</p>
+</article>
+
+<article class="article" id="erken">
+<h3>Krediyi erken ödemek ne demektir?</h3>
+<p>Erken ödeme, kredinin vadesi tamamlanmadan borcun bir kısmının veya tamamının kapatılmasıdır. Erken kapamada kalan borç ve sözleşme koşullarına göre gelecekte oluşacak faiz yükü değişebilir. Kesin kapama tutarı için ilgili finans kuruluşunun resmi hesabı dikkate alınmalıdır.</p>
+</article>
+
+<article class="article">
+<h3>Faizsiz kredi nedir?</h3>
+<p>“Faizsiz kredi” ifadesi bir kampanyada faiz oranının sıfır gösterilmesi anlamına gelebilir; ancak kampanyanın vadesi, üst limiti, tahsis şartları, sigorta veya diğer masrafları bulunabilir. Bu nedenle yalnızca “%0 faiz” ifadesine değil, kampanyanın toplam geri ödeme koşullarına bakılmalıdır.</p>
+</article>
+
+<article class="article">
+<h3>Kredi borcu nasıl yapılandırılır?</h3>
+<p>Borç yapılandırma, mevcut borcun yeni ödeme koşullarıyla yeniden düzenlenmesi anlamına gelebilir. Uygulanabilirlik ve koşullar finans kuruluşuna, borcun türüne ve ilgili düzenlemelere göre değişir. Yapılandırma düşünülüyorsa yeni toplam ödeme ile mevcut borç yükü birlikte değerlendirilmelidir.</p>
+</article>
+
+<article class="article">
+<h3>Kredi çekerken nelere dikkat edilmeli?</h3>
+<ul>
+<li>Aylık taksit yerine toplam geri ödemeyi de kontrol et.</li>
+<li>Faiz oranının hangi dönem için verildiğini ve ek maliyetleri incele.</li>
+<li>Vadenin bütçene uygun olduğundan emin ol.</li>
+<li>Resmi ödeme planını ve sözleşme koşullarını oku.</li>
+<li>Gelirini aşan bir taksit yükü oluşturmamaya dikkat et.</li>
+</ul>
+</article>
 </div>
+</section>
 
+<section class="section alt">
+<div class="wrap">
+<div class="ey">KREDİ SENARYOLARI</div>
+<h2>Aradığın rakamı doğrudan hesapla.</h2>
+<div class="cards">
+<div class="mini"><h3>50.000 TL kredi</h3><p>50.000 TL kredi için farklı vadelerde tahmini taksit.</p><button class="btn alt" onclick="quick(50000)">Hesapla</button></div>
+<div class="mini"><h3>100.000 TL kredi</h3><p>100.000 TL kredi için aylık ödeme ve toplam geri ödeme.</p><button class="btn alt" onclick="quick(100000)">Hesapla</button></div>
+<div class="mini"><h3>150.000 TL kredi</h3><p>150.000 TL kredi maliyetini farklı vade varsayımlarıyla incele.</p><button class="btn alt" onclick="quick(150000)">Hesapla</button></div>
+<div class="mini"><h3>200.000 TL kredi</h3><p>200.000 TL kredi için tahmini ödeme planı oluştur.</p><button class="btn alt" onclick="quick(200000)">Hesapla</button></div>
+<div class="mini"><h3>250.000 TL kredi</h3><p>250.000 TL kredi için taksit ve faiz hesabı.</p><button class="btn alt" onclick="quick(250000)">Hesapla</button></div>
+<div class="mini"><h3>500.000 TL kredi</h3><p>500.000 TL kredi için vade ve faiz senaryosu.</p><button class="btn alt" onclick="quick(500000)">Hesapla</button></div>
+</div>
+</div>
+</section>
 
+<section id="sss" class="section">
+<div class="wrap"><div class="ey">SIK SORULAN SORULAR</div><h2>Kredi hesaplama hakkında.</h2>
 <div class="faq">
-
-
-<details>
-
-<summary>
-Nakdi kredi nedir?
-</summary>
-
-<p>
-Nakdi kredi, genel olarak müşteriye para kullanım imkânı sağlayan kredi türlerini ifade eden finansal bir terimdir.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Nakit kredi ile nakdi kredi arasında fark var mı?
-</summary>
-
-<p>
-Günlük kullanımda benzer anlamlarda kullanılabilir; ürünün resmi tanımı için ilgili finans kuruluşunun açıklaması dikkate alınmalıdır.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Kredi hesaplama nasıl yapılır?
-</summary>
-
-<p>
-Kredi hesaplamasında kredi tutarı, faiz oranı, vade ve ilgili maliyetler dikkate alınır. Gerçek ödeme planı için güncel kuruluş hesaplaması esas alınmalıdır.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-En uygun kredi nasıl bulunur?
-</summary>
-
-<p>
-Faiz oranının yanında aylık taksit, toplam geri ödeme, vade ve diğer maliyetleri birlikte karşılaştırmak daha sağlıklı bir değerlendirme sağlar.
-</p>
-
-</details>
-
-
-</div>
-
-</div>
-
+<details open><summary>Kredi taksiti nasıl hesaplanır?</summary><p class="muted">Kredi tutarı, aylık faiz oranı ve vade kullanılarak tahmini eşit taksit hesaplanabilir. Gerçek kredi maliyeti ürüne göre değişebilir.</p></details>
+<details><summary>100.000 TL kredi çekince aylık ne kadar ödenir?</summary><p class="muted">Tek bir rakam yoktur. Aylık taksit faiz oranına ve vadeye göre değişir. Yukarıdaki hesaplayıcıdan tutar, faiz ve vadeyi değiştirerek sonucu görebilirsin.</p></details>
+<details><summary>Vade uzadıkça kredi daha mı ucuz olur?</summary><p class="muted">Aylık taksit düşebilir ancak toplam faiz ve geri ödeme artabilir. Bu nedenle yalnızca aylık taksite bakılmamalıdır.</p></details>
+<details><summary>Faiz oranı ile toplam maliyet aynı şey mi?</summary><p class="muted">Hayır. Faiz önemli bir maliyet unsurudur; vergi, sigorta, tahsis ücreti ve diğer koşullar da toplam maliyeti etkileyebilir.</p></details>
+<details><summary>Kredi notu düşükse kredi alınabilir mi?</summary><p class="muted">Kredi başvurularında karar finans kuruluşunun kendi değerlendirme kriterlerine göre verilir. Kredi notu tek başına kesin onay veya ret anlamına gelmez.</p></details>
+<details><summary>Erken ödeme yapmak avantajlı mı?</summary><p class="muted">Kalan vade ve sözleşme koşullarına göre gelecekte ödenecek faiz yükü azalabilir. Kesin sonuç için resmi kapama tutarı alınmalıdır.</p></details>
+<details><summary>Faizsiz kredi gerçekten sıfır maliyetli midir?</summary><p class="muted">Her zaman değil. Kampanyalarda vade, üst limit, sigorta veya başka koşullar bulunabilir. Toplam geri ödeme kontrol edilmelidir.</p></details>
+<details><summary>NakdiKredi banka mı?</summary><p class="muted">Hayır. NakdiKredi bağımsız bir kredi hesaplama ve finansal bilgi web projesidir.</p></details>
+</div></div>
 </section>
 
+<footer><div class="wrap"><strong style="font-size:21px;color:#fff">NakdiKredi.com</strong><p>Kredi hesaplama • kredi taksit hesaplama • kredi faiz hesaplama • ihtiyaç kredisi • kredi geri ödeme • erken ödeme • kredi rehberi</p><p>Buradaki hesaplamalar bilgilendirme amaçlı tahminlerdir. Güncel ve kesin kredi koşulları için ilgili finans kuruluşunun resmi bilgileri esas alınmalıdır.</p></div></footer>
+<div class="mobile"><a href="#hesapla">⌁<br>Hesapla</a><a href="#konular">▦<br>Konular</a><a href="#rehber">≡<br>Rehber</a><a href="#sss">?<br>SSS</a></div>
 
-<section class="cta" id="iletisim">
-
-<div class="container">
-
-<div class="kicker">
-NakdiKredi.com
-</div>
-
-<h2>
-Finans sektörünü anlatan güçlü bir dijital isim.
-</h2>
-
-<p>
-
-NakdiKredi.com; kredi, finans ve fintech alanında güçlü bir dijital marka kurmak için kullanılabilecek premium .com domain.
-
-</p>
-
-<a
-class="btn"
-href="mailto:cihanalc.c@gmail.com?subject=NakdiKredi.com%20hakkında"
->
-Bilgi almak için iletişime geç →
-</a>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<div class="container foot">
-
-<span>
-© 2026 NakdiKredi.com
-</span>
-
-<span>
-Kredi • Finans • Fintech
-</span>
-
-</div>
-
-</footer>
-
-
-<script type="application/ld+json">
-
-{
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-
-{
-"@type":"Question",
-"name":"Nakdi kredi nedir?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Nakdi kredi, genel olarak müşteriye para kullanım imkânı sağlayan kredi türlerini ifade eden finansal bir terimdir."
+<script>
+const $=x=>document.getElementById(x);
+const money=n=>new Intl.NumberFormat('tr-TR',{style:'currency',currency:'TRY',maximumFractionDigits:2}).format(n);
+function calc(P,r,n){
+ let i=r/100,p=i?P*i*Math.pow(1+i,n)/(Math.pow(1+i,n)-1):P/n,b=P,rows=[],cum=0;
+ for(let m=1;m<=n;m++){let interest=b*i,principal=Math.min(p-interest,b);b=Math.max(0,b-principal);cum+=interest;rows.push({m,p,interest,principal,b,cum})}
+ return {p,rows}
 }
-},
-
-{
-"@type":"Question",
-"name":"Nakit kredi ile nakdi kredi arasında fark var mı?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Günlük kullanımda benzer anlamlarda kullanılabilir; ürünün resmi tanımı için ilgili finans kuruluşunun açıklaması dikkate alınmalıdır."
+function calculate(){
+ let P=+$('amount').value||0,r=+$('rate').value||0,n=+$('term').value||12,inc=+$('income').value||0;
+ let x=calc(P,r,n),total=x.p*n;
+ $('monthly').textContent=money(x.p);$('total').textContent=money(total);$('interest').textContent=money(total-P);
+ $('summary').textContent=`${money(P)} kredi, ${n} ay vade ve aylık %${r.toFixed(2)} faiz varsayımında aylık taksit ${money(x.p)}, toplam geri ödeme ${money(total)}.`;
+ $('schedule').innerHTML=x.rows.map(z=>`<tr><td>${z.m}. ay</td><td>${money(z.p)}</td><td>${money(z.principal)}</td><td>${money(z.interest)}</td><td>${money(z.b)}</td><td>${money(z.cum)}</td></tr>`).join('');
 }
-},
-
-{
-"@type":"Question",
-"name":"Kredi hesaplama nasıl yapılır?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Kredi hesaplamasında kredi tutarı, faiz oranı, vade ve ilgili maliyetler dikkate alınır."
+function quick(v){$('amount').value=v;calculate();location.hash='hesapla'}
+function share(){
+ let u=new URL(location.href);u.searchParams.set('tutar',$('amount').value);u.searchParams.set('vade',$('term').value);u.searchParams.set('faiz',$('rate').value);
+ if(navigator.clipboard)navigator.clipboard.writeText(u.toString()).then(()=>alert('Senaryo bağlantısı kopyalandı.'));
+ else alert(u.toString());
 }
-},
-
-{
-"@type":"Question",
-"name":"En uygun kredi nasıl bulunur?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Faiz oranının yanında aylık taksit, toplam geri ödeme, vade ve diğer maliyetleri birlikte karşılaştırmak gerekir."
-}
-}
-
-]
-}
-
+(function(){let q=new URLSearchParams(location.search);if(q.get('tutar'))$('amount').value=q.get('tutar');if(q.get('vade'))$('term').value=q.get('vade');if(q.get('faiz'))$('rate').value=q.get('faiz');calculate()})();
 </script>
-
 </body>
 </html>
