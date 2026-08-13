@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nakdi Kredi Hesaplama 2026 | Taksit, Faiz, Geri Ödeme ve Erken Ödeme Simülasyonu</title>
-    <meta name="description" content="Nakdi kredi hesaplama aracı ile ihtiyaç, konut, taşıt ve ticari kredilerin taksit, faiz, toplam maliyet, erken ödeme avantajı ve ödeme planını hesaplayın. 2026 güncel oranlar, grafikler ve karşılaştırmalar.">
+    <meta name="description" content="Nakdi kredi hesaplama aracı ile ihtiyaç, konut, taşıt ve ticari kredilerin taksit, faiz, toplam maliyet, erken ödeme avantajı ve ödeme planını hesaplayın. 2026 örnek oranlar, grafikler ve karşılaştırmalar.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://nakdikredi.com/">
     <meta property="og:title" content="Nakdi Kredi Hesaplama 2026 – Tüm Krediler İçin Detaylı Hesaplama">
@@ -49,7 +49,6 @@
             width: min(1200px, 94%);
             margin: auto;
         }
-        /* top bar */
         .top {
             background: var(--dark);
             color: #c9d8d2;
@@ -61,7 +60,6 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
-        /* nav */
         nav {
             position: sticky;
             top: 0;
@@ -132,7 +130,6 @@
             padding: 8px 14px;
             font-size: 11px;
         }
-        /* hero */
         .hero {
             padding: 72px 0 50px;
             background: radial-gradient(circle at 85% 10%, #d7f2e4, transparent 36%), linear-gradient(#fbfdfc, #fff);
@@ -175,7 +172,6 @@
             font-weight: 850;
             color: var(--ink);
         }
-        /* sections */
         .section {
             padding: 68px 0;
         }
@@ -399,7 +395,6 @@
         .mobile {
             display: none;
         }
-        /* yeni bileşenler */
         .compare-grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -494,6 +489,22 @@
             gap: 12px;
             flex-wrap: wrap;
             align-items: center;
+        }
+        .faiz-ornek-tablo {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin: 12px 0;
+        }
+        .faiz-ornek-tablo th,
+        .faiz-ornek-tablo td {
+            border: 1px solid var(--line);
+            padding: 8px 10px;
+            text-align: center;
+        }
+        .faiz-ornek-tablo th {
+            background: var(--soft);
+            font-weight: 900;
         }
         @media(max-width:850px) {
             .links {
@@ -590,22 +601,14 @@
                 ]
             }, {
                 "@type": "FAQPage",
-                "mainEntity": [{
-                    "@type": "Question",
-                    "name": "Kredi taksiti nasıl hesaplanır?",
-                    "acceptedAnswer": { "@type": "Answer",
-                        "text": "Kredi tutarı, aylık faiz oranı ve vade kullanılarak eşit taksit formülüyle hesaplanır. Aracımız bu hesaplamayı otomatik yapar." }
-                }, {
-                    "@type": "Question",
-                    "name": "Erken ödeme ne kadar faiz kazandırır?",
-                    "acceptedAnswer": { "@type": "Answer",
-                        "text": "Erken ödeme, kalan vadeye göre gelecekte ödenecek faizleri azaltır. Simülasyonumuzla avantajı görebilirsiniz." }
-                }, {
-                    "@type": "Question",
-                    "name": "En uygun vade nasıl seçilir?",
-                    "acceptedAnswer": { "@type": "Answer",
-                        "text": "Aylık bütçenize ve toplam maliyet hedefinize göre kısa vade (düşük faiz) veya uzun vade (düşük taksit) arasında seçim yapabilirsiniz." }
-                }]
+                "mainEntity": [
+                    { "@type": "Question", "name": "Kredi taksiti nasıl hesaplanır?", "acceptedAnswer": { "@type": "Answer",
+                            "text": "Kredi tutarı, aylık faiz oranı ve vade kullanılarak eşit taksit formülüyle hesaplanır. Aracımız bu hesaplamayı otomatik yapar." } },
+                    { "@type": "Question", "name": "Erken ödeme ne kadar faiz kazandırır?", "acceptedAnswer": { "@type": "Answer",
+                            "text": "Erken ödeme, kalan vadeye göre gelecekte ödenecek faizleri azaltır. Simülasyonumuzla avantajı görebilirsiniz." } },
+                    { "@type": "Question", "name": "En uygun vade nasıl seçilir?", "acceptedAnswer": { "@type": "Answer",
+                            "text": "Aylık bütçenize ve toplam maliyet hedefinize göre kısa vade (düşük faiz) veya uzun vade (düşük taksit) arasında seçim yapabilirsiniz." } }
+                ]
             }]
         }
     </script>
@@ -639,7 +642,7 @@
     <header class="hero">
         <div class="wrap">
             <div class="breadcrumb"><a href="#">Ana Sayfa</a> › Kredi Hesaplama</div>
-            <div class="ey">NAKDİ KREDİ • 2026 GÜNCEL HESAPLAMA</div>
+            <div class="ey">NAKDİ KREDİ • 2026 ÖRNEK HESAPLAMA</div>
             <h1>Kredinin taksidini değil, <span class="green">gerçek maliyetini</span> anla.</h1>
             <p class="lead">İhtiyaç, konut, taşıt veya ticari kredi – tutar, vade ve faiz oranını girerek aylık taksit, toplam geri ödeme, faiz tutarı, erken ödeme avantajı ve detaylı ödeme planını görsel grafiklerle inceleyin.</p>
             <div class="chips">
@@ -696,7 +699,7 @@
                     <div class="field">
                         <label>AYLIK FAİZ (%)</label>
                         <input id="rate" type="number" value="3.19" step="0.01">
-                        <div style="font-size:9px;color:var(--muted);margin-top:4px;" id="rateHint">İhtiyaç kredisi için güncel oranlar %2,5 – %4,5 arası</div>
+                        <div style="font-size:9px;color:var(--muted);margin-top:4px;" id="rateHint">İhtiyaç kredisi için örnek oran %3,19</div>
                     </div>
                     <div class="field" style="grid-column:span 2">
                         <label>AYLIK GELİR (TL) – Öneri için</label>
@@ -713,7 +716,6 @@
                     <div class="stat"><small>TOPLAM GERİ ÖDEME</small><strong id="total">—</strong></div>
                     <div class="stat"><small>TOPLAM FAİZ</small><strong id="interest">—</strong></div>
                 </div>
-                <!-- Maksimum kredi önerisi -->
                 <div id="maxLoanAdvice" style="background:#f0f7f3;border-radius:12px;padding:12px;margin-top:12px;font-size:12px;color:var(--g2);"></div>
                 <div class="notice">
                     <strong>⚠️ Bilgilendirme:</strong> Hesaplamalar örnek matematiksel varsayımlara dayanır. Vergi, sigorta, tahsis ücreti ve diğer ürün koşulları gerçek maliyeti değiştirebilir.
@@ -742,7 +744,7 @@
 
                 <hr style="border:0;border-top:1px solid var(--line);margin:15px 0;">
                 <div class="ey">POPÜLER TUTAR TABLOSU</div>
-                <p style="font-size:10px;color:var(--muted);">Önceden hesaplanmış (36 ay, %3,19 faiz)</p>
+                <p style="font-size:10px;color:var(--muted);">Örnek hesaplama (36 ay, %3,19 faiz)</p>
                 <div id="populerTablo" class="populer-tablo"></div>
             </div>
         </div>
@@ -799,23 +801,59 @@
         </div>
     </section>
 
-    <!-- KREDİ TÜRLERİ -->
+    <!-- KREDİ TÜRLERİ (detaylı açıklamalar) -->
     <section id="kredi-turleri" class="section alt">
         <div class="wrap">
             <div class="ey">FARKLI KREDİ TÜRLERİ</div>
             <h2>İhtiyacına göre kredi seç.</h2>
             <div class="cards">
-                <div class="mini"><h3>💰 İhtiyaç Kredisi</h3><p>Nakit ihtiyaçlar için teminatsız, 6-60 ay vade.</p><a href="#hesapla">Hesapla →</a></div>
-                <div class="mini"><h3>🏠 Konut Kredisi</h3><p>İpotek karşılığı uzun vadeli (120-240 ay) düşük faiz.</p><a href="#hesapla">Hesapla →</a></div>
-                <div class="mini"><h3>🚗 Taşıt Kredisi</h3><p>Yeni/ikinci el araç için 48 aya kadar.</p><a href="#hesapla">Hesapla →</a></div>
-                <div class="mini"><h3>🏢 Ticari Kredi</h3><p>İşletme sermayesi ve yatırım için esnek koşullar.</p><a href="#hesapla">Hesapla →</a></div>
-                <div class="mini"><h3>📱 Dijital Kredi</h3><p>Mobil bankacılıktan anında küçük tutarlı kredi.</p><a href="#hesapla">Hesapla →</a></div>
-                <div class="mini"><h3>🔄 Kredi Yapılandırma</h3><p>Mevcut kredileri yeniden düzenleyerek taksitleri azalt.</p><a href="#hesapla">Hesapla →</a></div>
+                <div class="mini">
+                    <h3>💰 İhtiyaç Kredisi</h3>
+                    <p>Nakit ihtiyaçlar için teminatsız, 6-60 ay vade. Genelde 1.000 – 500.000 TL arası. Faiz oranları kredi notuna göre değişir. Hızlı başvuru, kısa sürede sonuç.</p>
+                </div>
+                <div class="mini">
+                    <h3>🏠 Konut Kredisi</h3>
+                    <p>İpotek karşılığı uzun vadeli (120-240 ay) düşük faiz. Ev alımı veya yenileme için. Vergi avantajları ve devlet destekleri olabilir.</p>
+                </div>
+                <div class="mini">
+                    <h3>🚗 Taşıt Kredisi</h3>
+                    <p>Yeni/ikinci el araç için 48 aya kadar vade. Faiz oranları aracın yaşına göre değişir (0-3 yaş avantajlı). Kasko zorunluluğu vardır.</p>
+                </div>
+                <div class="mini">
+                    <h3>🏢 Ticari Kredi</h3>
+                    <p>İşletme sermayesi, yatırım veya nakit akışı için esnek koşullar. Tutar ve vade kurumdan kuruma değişir, genellikle teminat istenir.</p>
+                </div>
+                <div class="mini">
+                    <h3>📱 Dijital Kredi</h3>
+                    <p>Mobil bankacılık üzerinden anında başvuru, dakikalar içinde sonuç. Küçük tutarlı (10.000 – 50.000 TL) ve kısa vadeli (3-12 ay).</p>
+                </div>
+                <div class="mini">
+                    <h3>🔄 Kredi Yapılandırma</h3>
+                    <p>Mevcut kredileri daha düşük faiz veya uzun vadeyle yeniden düzenleyerek taksitleri azaltın. Bankadan bankaya farklılık gösterir.</p>
+                </div>
+            </div>
+
+            <!-- Örnek faiz tablosu (güncel değil, varsayımsal) -->
+            <div style="margin-top:30px;">
+                <div class="ey">ÖRNEK FAİZ ORANLARI (VARSayıMSAL)</div>
+                <p style="font-size:12px;color:var(--muted);">Aşağıdaki oranlar örnek amaçlıdır, güncel değildir. Bankalardan teyit alınız.</p>
+                <table class="faiz-ornek-tablo">
+                    <thead>
+                        <tr><th>Kredi Türü</th><th>Vade Aralığı</th><th>Örnek Aylık Faiz (%)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>İhtiyaç Kredisi</td><td>6 – 60 ay</td><td>2,50 – 4,50</td></tr>
+                        <tr><td>Konut Kredisi</td><td>120 – 240 ay</td><td>1,80 – 3,20</td></tr>
+                        <tr><td>Taşıt Kredisi (0-3 yaş)</td><td>12 – 48 ay</td><td>2,00 – 3,50</td></tr>
+                        <tr><td>Taşıt Kredisi (4+ yaş)</td><td>12 – 36 ay</td><td>3,50 – 5,00</td></tr>
+                        <tr><td>Ticari Kredi</td><td>6 – 60 ay</td><td>2,50 – 5,50</td></tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
 
-    <!-- KAPSAMLI REHBER (20+ başlık) -->
+    <!-- KAPSAMLI REHBER (tüm yazılar tam metin) -->
     <section id="rehber" class="section">
         <div class="wrap">
             <div class="ey">KAPSAMLI KREDİ REHBERİ</div>
@@ -835,106 +873,115 @@
                 <a href="#sigorta">Kredi sigortası nedir?</a>
             </div>
 
+            <!-- Tüm makaleler tam metin -->
             <article class="article" id="ihtiyac">
                 <h3>İhtiyaç kredisi nedir?</h3>
-                <p>Bireysel nakit ihtiyaçlarını karşılayan teminatsız kredidir. Genelde 1.000 – 500.000 TL arası, 6-60 ay vadeli. Faiz oranları kredi notuna göre değişir.</p>
+                <p>İhtiyaç kredisi, bireylerin kişisel harcamaları (tatil, sağlık, eğitim, ev eşyası, tadilat vb.) için kullandığı teminatsız bir kredi türüdür. Bankalar genellikle 1.000 TL ile 500.000 TL arasında değişen tutarlarda, 6 ay ile 60 ay arasında vade seçenekleri sunar. Faiz oranları, kullanıcının kredi notuna, gelir durumuna ve bankanın politikasına göre değişkenlik gösterir. İhtiyaç kredisinde ipotek veya kefil gibi teminatlar genelde aranmaz, bu da başvuru sürecini hızlandırır. Ancak teminatsız olduğu için faiz oranları konut veya taşıt kredisine göre daha yüksektir. Kredi kullanmadan önce sadece aylık taksit tutarına değil, toplam geri ödeme miktarına ve faiz oranına da odaklanmak önemlidir. Ayrıca dosya masrafı, sigorta ve vergi gibi ek maliyetler toplam maliyeti artırabilir. Bu nedenle bankaların sunduğu yıllık maliyet oranını (APR) incelemek, gerçek maliyeti anlamak için en doğru yoldur.</p>
             </article>
+
             <article class="article" id="faiz">
                 <h3>Kredi faiz oranı nasıl okunur?</h3>
-                <p>Aylık faiz oranı ana maliyet kalemidir ancak vergi, sigorta, dosya masrafı toplam maliyeti etkiler. Yıllık maliyet oranı (APR) daha kapsayıcıdır.</p>
+                <p>Kredi tekliflerinde en dikkat çeken unsur aylık faiz oranıdır. Ancak aylık faiz oranı, kredinin toplam maliyetini tek başına göstermez. Bankalar faiz oranına ek olarak <strong>KKDF (Kaynak Kullanımını Destekleme Fonu)</strong> ve <strong>BSMV (Bankacılık ve Sigorta Muameleleri Vergisi)</strong> gibi vergileri de yansıtır. Ayrıca dosya masrafı, tahsis ücreti, sigorta primleri gibi kalemler de toplam maliyeti etkiler. Bu nedenle iki bankanın aylık faiz oranı aynı olsa bile toplam maliyet farklı olabilir. Tüketicilerin <strong>Yıllık Maliyet Oranı (APR)</strong>'na bakması önerilir. APR, tüm masrafları içeren yıllık yüzde oranıdır ve kredinin gerçek maliyetini karşılaştırmak için en sağlıklı göstergedir. NakdiKredi hesaplayıcısı, anapara, aylık taksit ve toplam faizi ayrı ayrı göstererek kullanıcının maliyeti daha net görmesini sağlar.</p>
             </article>
+
             <article class="article" id="vade">
-                <h3>Vade nasıl seçilir?</h3>
-                <p>Kısa vade → düşük faiz, yüksek taksit; uzun vade → düşük taksit, yüksek toplam faiz. Bütçe ve toplam maliyet dengesine göre karar verin.</p>
+                <h3>Kredi vadesi nasıl seçilir?</h3>
+                <p>Vade seçimi, aylık bütçeniz ve toplam maliyet hedefiniz arasındaki dengeye göre belirlenmelidir. <strong>Kısa vade</strong> (örneğin 12-24 ay) aylık taksit miktarını yükseltir, ancak toplamda ödediğiniz faiz düşer. <strong>Uzun vade</strong> (36-60 ay veya daha fazla) ise aylık taksiti azaltır, fakat toplam faiz yükü önemli ölçüde artar. Örneğin 100.000 TL krediyi 36 ay vadede kullanırsanız aylık taksit yaklaşık 4.500 TL, toplam geri ödeme 162.000 TL civarında olabilir. Aynı krediyi 60 ay vadede kullanırsanız aylık taksit 3.500 TL’ye düşer, ancak toplam geri ödeme 210.000 TL’ye çıkar. Bu nedenle en düşük taksit her zaman en avantajlı seçenek değildir. Bütçenize uygun taksit ile makul toplam faiz arasında bir denge bulmak gerekir. NakdiKredi’nin vade karşılaştırma tablosu, farklı vadelerdeki maliyetleri aynı ekranda görerek karar vermenizi kolaylaştırır.</p>
             </article>
+
             <article class="article" id="maliyet">
                 <h3>Toplam kredi maliyeti nedir?</h3>
-                <p>Anapara + faiz + tüm ek masraflar. Bankaların sunduğu “faizsiz” kampanyalar bile sigorta ve dosya ücreti içerebilir.</p>
+                <p>Toplam kredi maliyeti, kullandığınız anapara ile birlikte ödediğiniz tüm faiz, vergi, sigorta, dosya masrafı ve diğer ücretlerin toplamıdır. Bankalar genellikle bu kalemleri ayrı ayrı belirtir, ancak bazı durumlarda tek bir “tahsis ücreti” veya “dosya masrafı” altında toplayabilir. Tüketici olarak sözleşmeyi imzalamadan önce tüm bu kalemleri tek tek incelemeniz gerekir. “Faizsiz kredi” kampanyaları bile sigorta ve dosya masrafı içerebilir, bu yüzden toplam geri ödeme tutarına bakmak her zaman daha güvenlidir. NakdiKredi, anapara, toplam faiz ve toplam geri ödemeyi net bir şekilde göstererek kullanıcının maliyeti doğru değerlendirmesine yardımcı olur.</p>
             </article>
+
             <article class="article" id="not">
                 <h3>Kredi notu ve önemi</h3>
-                <p>Findeks puanı (0-1900) ödeme alışkanlığını gösterir. 1000+ iyi kabul edilir. Yüksek not daha iyi faiz ve limit demektir.</p>
+                <p>Kredi notu, Findeks gibi kredi kayıt büroları tarafından hesaplanan ve bireylerin ödeme alışkanlıklarını, kredi geçmişini ve mali durumunu yansıtan bir puandır. 0 ile 1900 arasında değişir. 1000 puan üzeri genellikle “iyi” olarak kabul edilir ve bankalar bu notu yüksek olan kişilere daha düşük faiz oranları ve daha yüksek kredi limitleri sunar. Kredi notunu yükseltmek için faturaları zamanında ödemek, kredi kartı limitini aşmamak, mevcut borçları düzenli olarak ödemek ve kısa sürede çok sayıda kredi başvurusu yapmamak gerekir. Her kredi başvurusu kredi notunu bir miktar düşürebilir. Bu nedenle başvuru yapmadan önce teklifleri karşılaştırmak ve en uygun seçeneğe başvurmak önerilir.</p>
             </article>
+
             <article class="article" id="erken">
                 <h3>Erken ödeme avantajı</h3>
-                <p>Kalan vadeye göre faiz yükünü azaltır. Bankalar erken kapama ücreti (%1-2) alabilir. Simülasyonumuzla net avantajı görün.</p>
+                <p>Kredinizi vadesinden önce kapatmak, kalan vadede ödeyeceğiniz faizlerden kurtulmanızı sağlar. Ancak bankalar erken kapama durumunda %1 ile %2 arasında değişen bir erken kapama ücreti talep edebilir (bu oran sözleşmeye göre değişir). Erken ödeme yapmadan önce kalan anapara, erken kapama ücreti ve toplamda ne kadar faizden kurtulacağınızı hesaplamak önemlidir. NakdiKredi’nin erken ödeme simülasyonu, hangi ayda kapatırsanız ne kadar faiz avantajı elde edeceğinizi gösterir. Kesin tutar için bankanızdan resmi bir hesaplama almanız önerilir.</p>
             </article>
+
             <article class="article" id="konut">
                 <h3>Konut kredisi avantajları</h3>
-                <p>Uzun vade (120-240 ay), düşük faiz, vergi avantajları. Tapu harcı, ekspertiz, sigorta gibi ek maliyetleri unutmayın.</p>
+                <p>Konut kredisi, ipotek karşılığı kullanıldığı için diğer kredi türlerine göre daha düşük faiz oranlarına sahiptir. Vade süresi 120 aydan 240 aya kadar çıkabilir, bu da aylık taksitleri oldukça düşürür. Ayrıca bazı devlet destekleri (ilk ev alımında) ve vergi avantajlarından yararlanma imkânı vardır. Konut kredisi hesaplarken sadece faiz oranına değil, tapu harcı, ekspertiz ücreti, konut sigortası ve hayat sigortası gibi ek maliyetlere de dikkat etmek gerekir. Bu masraflar toplam maliyeti %5-10 artırabilir. Uzun vade düşük taksit sağlasa da toplam faiz yükünün yüksek olacağı unutulmamalıdır.</p>
             </article>
+
             <article class="article" id="tasit">
                 <h3>Taşıt kredisi ipuçları</h3>
-                <p>Araç yaşı faizi etkiler (0-3 yaş düşük, 4+ yaş yüksek). Kasko ve trafik sigortasını bütçeye ekleyin.</p>
+                <p>Taşıt kredisi, sıfır veya ikinci el araç alımında kullanılır. Aracın yaşı, faiz oranını doğrudan etkiler. 0-3 yaş arası araçlar için faiz oranları daha düşük, 4 yaş ve üzeri araçlar için daha yüksektir. Vade genellikle 48 ay ile sınırlıdır, ancak bazı bankalar 60 aya kadar vade sunabilir. Taşıt kredisi kullanırken kasko sigortası zorunludur ve bu masraf bütçeye eklenmelidir. Ayrıca aracın değerinin en fazla %80’i kredi olarak kullanılabilir, kalan %20’lik kısmı peşin ödemek gerekir. Kredi hesaplamasında faiz oranı, vade ve sigorta maliyetlerini toplam geri ödeme içinde değerlendirmek önemlidir.</p>
             </article>
+
             <article class="article" id="banka">
                 <h3>Banka seçimi nasıl yapılır?</h3>
-                <p>Faiz, masraf, sigorta zorunluluğu, müşteri hizmetleri gibi kriterleri karşılaştırın. En az 3 banka teklifi alın.</p>
+                <p>Kredi başvurusu yapmadan önce en az 3-5 farklı bankanın teklifini karşılaştırmak, en iyi seçeneği bulmak için kritiktir. Karşılaştırma yaparken sadece aylık faiz oranına değil, toplam maliyet oranına (APR), dosya masrafı, tahsis ücreti, sigorta zorunlulukları, erken ödeme cezası ve müşteri hizmetleri kalitesine dikkat edin. Ayrıca dijital bankalar genellikle daha düşük masraf ve daha hızlı başvuru sunar, ancak şube hizmeti gerekiyorsa geleneksel bankalar tercih edilebilir. Kullanıcı yorumları ve şikâyet platformları da banka seçiminde yol gösterici olabilir. Unutmayın: en düşük faiz her zaman en uygun maliyet anlamına gelmez, tüm masrafları hesaba katın.</p>
             </article>
+
             <article class="article" id="kredi-turleri">
                 <h3>Kredi türleri karşılaştırması</h3>
-                <p>İhtiyaç, konut, taşıt, ticari, dijital – her birinin vade aralığı, teminat durumu ve faiz seviyesi farklıdır.</p>
+                <p>Temel kredi türleri (ihtiyaç, konut, taşıt, ticari, dijital) arasında vade, faiz, teminat ve kullanım amacı açısından önemli farklar vardır. İhtiyaç kredisi teminatsız ve kısa-orta vadeli, konut kredisi ipotekli ve uzun vadeli, taşıt kredisi araç rehinli ve orta vadeli, ticari kredi işletme odaklı ve esnek, dijital kredi ise hızlı ve küçük tutarlıdır. Hangi türün size uygun olduğuna karar verirken ihtiyacınızı, geri ödeme kapasitenizi ve risk tercihinizi göz önünde bulundurun. NakdiKredi tüm bu türler için hesaplama imkânı sunarak karar sürecinizi destekler.</p>
             </article>
+
             <article class="article" id="gelir">
                 <h3>Gelire göre kredi belirleme</h3>
-                <p>Genel kural: aylık taksit gelirin %30’unu geçmemeli. Aracımız size maksimum öneri sunar.</p>
+                <p>Genel finansal kural, aylık taksit ödemelerinin aylık net gelirin %30’unu geçmemesidir. Bu oran, diğer yaşam giderleri, kira, mutfak, faturalar ve acil durumlar için yeterli bütçe kalmasını sağlar. Örneğin aylık geliri 40.000 TL olan bir kişi için maksimum aylık taksit 12.000 TL civarı olmalıdır. Buna göre maksimum kredi tutarı hesaplanabilir. NakdiKredi’nin “aylık gelir” alanına bu bilgiyi girdiğinizde, size önerilen maksimum kredi tutarını gösterir. Ancak bu sadece bir önermedir; kendi kişisel harcamalarınız ve borçlarınızla birlikte değerlendirme yapmanız önemlidir.</p>
             </article>
+
             <article class="article" id="sigorta">
                 <h3>Kredi sigortası nedir?</h3>
-                <p>Hayat, konut veya taşıt sigortası zorunlu olabilir. Bu ek maliyetleri toplam maliyete dahil edin.</p>
+                <p>Kredi sigortası, krediyi kullanan kişinin ölüm, kaza veya işsizlik gibi durumlarda kredi borcunun sigorta şirketi tarafından ödenmesini sağlayan bir güvencedir. Özellikle konut ve taşıt kredilerinde zorunlu tutulabilir. Hayat sigortası, konut sigortası (DASK), kasko gibi farklı sigorta türleri krediye bağlı olarak devreye girer. Bu sigortaların primleri toplam kredi maliyetini artırır, bu nedenle hesaplama yaparken sigorta masraflarını da dikkate almak gerekir. Bazı bankalar sigortayı zorunlu tutmazken, bazıları zorunlu kılar. Sigortası olmayan krediler daha düşük toplam maliyet sunabilir, ancak risklere karşı kendinizi korumak için en azından hayat sigortası yaptırmak akıllıca olabilir.</p>
             </article>
         </div>
     </section>
 
-    <!-- BLOG -->
+    <!-- BLOG (tam metin yazılar) -->
     <section id="blog" class="section alt">
         <div class="wrap">
             <div class="ey">GÜNCEL KREDİ BLOGU</div>
             <h2>En son kredi haberleri ve ipuçları.</h2>
             <div class="cards">
                 <div class="mini">
-                    <span style="background:var(--g2);color:#fff;padding:2px 12px;border-radius:99px;font-size:8px;display:inline-block;">Güncel</span>
-                    <h3>2026 Kredi Faiz Oranları</h3>
-                    <p>Merkez Bankası kararları sonrası ihtiyaç, konut ve taşıt oranlarındaki son durum.</p>
-                    <a href="#">Devamını oku →</a>
+                    <span style="background:var(--g2);color:#fff;padding:2px 12px;border-radius:99px;font-size:8px;display:inline-block;">Örnek</span>
+                    <h3>2026 Kredi Faiz Oranları – Örnek Senaryo</h3>
+                    <p>2026 yılında Merkez Bankası’nın politika faizlerinde değişiklikler olabilir. Bu yazıda olası senaryolara göre ihtiyaç, konut ve taşıt kredisi faiz oranlarının nasıl şekillenebileceğini, ekonomistlerin yorumlarıyla birlikte ele alıyoruz. Örneğin, politika faizinin %5 seviyesinde olduğu bir ortamda ihtiyaç kredisi faizleri %3,5-5,0 arası, konut kredisi %2,0-3,5 arası, taşıt kredisi ise %2,5-4,5 arası olabilir. Ancak bu oranlar bankaların fonlama maliyetine, rekabete ve kredi riskine göre değişir. Bu nedenle en güncel oranlar için banka web sitelerini ziyaret etmeniz önerilir.</p>
                 </div>
                 <div class="mini">
                     <span style="background:var(--g2);color:#fff;padding:2px 12px;border-radius:99px;font-size:8px;display:inline-block;">Rehber</span>
                     <h3>Kredi Notu Yükseltme Taktiği</h3>
-                    <p>Notunuzu 100 puan artırmanın 5 kolay yolu. Bankaların puanlama sistemi.</p>
-                    <a href="#">Devamını oku →</a>
+                    <p>Kredi notunuzu 100 puan yükseltmek için 5 basit adım: 1) Kredi kartı borcunu asgari tutardan fazla ödeyin, 2) Faturaları vadesinde ödeyin, 3) Kullanılmayan kredi kartlarını kapatın, 4) Kredi limitini aşmayın, 5) Kısa sürede çok fazla kredi başvurusu yapmayın. Bu adımları izleyerek 6 ay içinde notunuzda gözle görülür bir artış görebilirsiniz. Yüksek kredi notu, daha düşük faiz oranları ve daha yüksek limitler demektir. Ayrıca notunuzu düzenli olarak Findeks üzerinden kontrol edin, hatalı kayıtlar varsa düzeltme talebinde bulunun.</p>
                 </div>
                 <div class="mini">
                     <span style="background:var(--g2);color:#fff;padding:2px 12px;border-radius:99px;font-size:8px;display:inline-block;">Karşılaştırma</span>
-                    <h3>En Düşük Faizli Banka Hangisi?</h3>
-                    <p>Mart 2026 itibarıyla 10 bankanın ihtiyaç kredisi faizleri ve masrafları.</p>
-                    <a href="#">Devamını oku →</a>
+                    <h3>En Düşük Faizli Banka Hangisi? – Örnek Karşılaştırma</h3>
+                    <p>Mart 2026 itibarıyla (örnek veriler) Akbank, Garanti, Yapı Kredi, İş Bankası ve Ziraat Bankası’nın ihtiyaç kredisi faiz oranları sırasıyla %3,45, %3,29, %3,55, %3,40 ve %3,15 olarak varsayılmıştır. Ancak bu oranlar dosya masrafı, sigorta ve diğer masrafları içermez. Tam maliyet için APR oranlarına bakmak gerekir. Örneğin Ziraat Bankası’nın APR’si %3,45, Garanti’nin %3,60 olabilir. En düşük faizli banka her zaman en düşük maliyetli değildir. Bu nedenle her bankanın detaylı teklifini karşılaştırmanızı öneririz. Ayrıca müşteri hizmetleri, şube ağı ve dijital kanallar da seçimde etkili olabilir.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SSS (genişletilmiş 15 soru) -->
+    <!-- SSS (15 soru cevap) -->
     <section id="sss" class="section">
         <div class="wrap">
             <div class="ey">SIK SORULAN SORULAR</div>
             <h2>Kredi hakkında merak ettiğin her şey.</h2>
             <div class="faq">
-                <details open><summary>Kredi taksiti nasıl hesaplanır?</summary><p class="muted">Tutar, faiz ve vade ile eşit taksit formülü kullanılır. Aracımız otomatik hesaplar.</p></details>
-                <details><summary>100.000 TL kredinin aylık taksiti ne kadar?</summary><p class="muted">Faiz ve vadeye göre değişir. Hesaplayıcıda görebilirsiniz.</p></details>
-                <details><summary>Vade uzarsa toplam maliyet artar mı?</summary><p class="muted">Evet, aylık taksit düşer ama toplam faiz artar.</p></details>
-                <details><summary>Erken ödeme avantajlı mı?</summary><p class="muted">Kalan faizden kurtulursunuz, ancak erken kapama ücreti olabilir. Simülasyonla görebilirsiniz.</p></details>
-                <details><summary>Kredi notu düşükse kredi çıkar mı?</summary><p class="muted">Bankalar kendi kriterlerine göre karar verir. Düşük not, red olasılığını artırır.</p></details>
-                <details><summary>Konut kredisi için en uygun vade nedir?</summary><p class="muted">120-180 ay idealdir; 240 ay taksitleri düşürür ama faiz artar.</p></details>
-                <details><summary>Taşıt kredisi çekerken nelere dikkat edilmeli?</summary><p class="muted">Araç yaşı, kasko zorunluluğu, faiz oranı ve vade.</p></details>
-                <details><summary>Kredi başvurusu kaç gün sürer?</summary><p class="muted">Dijital başvurular dakikalar, şube başvuruları 1-3 iş günü.</p></details>
-                <details><summary>Kredi reddedilirse ne yapmalı?</summary><p class="muted">Red sebebini öğrenin, kredi notunu kontrol edin, başka banka deneyin.</p></details>
-                <details><summary>Faizsiz kredi gerçekten sıfır maliyet mi?</summary><p class="muted">Hayır, dosya masrafı, sigorta gibi ek maliyetler olabilir.</p></details>
-                <details><summary>Kredi sigortası zorunlu mu?</summary><p class="muted">Bazı kredilerde zorunludur; maliyeti hesaplamaya dahil edin.</p></details>
-                <details><summary>Gelirimin ne kadarı kredi taksidine gitmeli?</summary><p class="muted">Genelde %30’u geçmemesi önerilir. Aracımız maksimum öneri sunar.</p></details>
-                <details><summary>Kredi notumu nasıl yükseltebilirim?</summary><p class="muted">Faturaları zamanında ödeyin, limiti aşmayın, borçları düzenli ödeyin.</p></details>
-                <details><summary>NakdiKredi bir banka mı?</summary><p class="muted">Hayır, bağımsız bir hesaplama ve bilgi platformudur.</p></details>
-                <details><summary>Hesaplama sonuçları kesin mi?</summary><p class="muted">Tahminidir; resmi teklif için bankanıza başvurun.</p></details>
+                <details open><summary>Kredi taksiti nasıl hesaplanır?</summary><p class="muted">Kredi tutarı, aylık faiz oranı ve vade kullanılarak eşit taksit formülüyle hesaplanır. Formül: Taksit = (Tutar × faiz) / (1 - (1+faiz)^(-vade)). Aracımız bunu otomatik yapar.</p></details>
+                <details><summary>100.000 TL kredinin aylık taksiti ne kadar?</summary><p class="muted">Vade ve faiz oranına bağlıdır. Örneğin 36 ay, %3,19 faizle aylık taksit yaklaşık 4.500 TL; 60 ay, %3,19 ile 3.500 TL civarındadır. Hesaplayıcı ile görebilirsiniz.</p></details>
+                <details><summary>Vade uzarsa toplam maliyet artar mı?</summary><p class="muted">Evet, aylık taksit düşer ancak toplam ödenen faiz artar, dolayısıyla toplam geri ödeme artar. Uzun vade düşük taksit isteyenler için, kısa vade toplam maliyeti azaltmak isteyenler için uygundur.</p></details>
+                <details><summary>Erken ödeme avantajlı mı?</summary><p class="muted">Evet, kalan faizden kurtulursunuz, ancak bankalar erken kapama ücreti (%1-2) alabilir. Simülasyonumuzla avantajı net görebilirsiniz.</p></details>
+                <details><summary>Kredi notu düşükse kredi çıkar mı?</summary><p class="muted">Bankalar kendi kriterlerine göre değerlendirir. Düşük not, ret olasılığını artırır ancak bazı bankalar düşük notlu müşterilere daha yüksek faizle kredi verebilir.</p></details>
+                <details><summary>Konut kredisi için en uygun vade nedir?</summary><p class="muted">Genelde 120-180 ay önerilir. 240 ay taksitleri çok düşürür ama toplam faiz yükü ciddi şekilde artar. Bütçenize ve toplam maliyet hedefinize göre seçim yapın.</p></details>
+                <details><summary>Taşıt kredisi çekerken nelere dikkat edilmeli?</summary><p class="muted">Araç yaşı (0-3 yaş düşük faiz), kasko zorunluluğu, vade seçeneği (48 ay genelde), toplam maliyet, dosya masrafı ve sigorta primleri.</p></details>
+                <details><summary>Kredi başvurusu kaç gün sürer?</summary><p class="muted">Dijital başvurular dakikalar içinde sonuçlanır, şube başvuruları 1-3 iş günü sürebilir. Evrak tam ve eksiksiz olmalıdır.</p></details>
+                <details><summary>Kredi reddedilirse ne yapmalı?</summary><p class="muted">Red sebebini öğrenin (genelde not düşüklüğü, gelir yetersizliği). Kredi notunu yükseltmek için önerileri uygulayın, başka bir bankayı deneyin veya daha düşük tutarla başvurun.</p></details>
+                <details><summary>Faizsiz kredi gerçekten sıfır maliyet mi?</summary><p class="muted">Hayır, dosya masrafı, sigorta, tahsis ücreti gibi ek masraflar olabilir. Toplam geri ödeme tutarına mutlaka bakın.</p></details>
+                <details><summary>Kredi sigortası zorunlu mu?</summary><p class="muted">Bazı kredilerde (konut, taşıt) zorunlu olabilir. İhtiyaç kredisinde genelde isteğe bağlıdır. Zorunlu olmadığı durumlarda sigorta yaptırmak risklere karşı koruma sağlar.</p></details>
+                <details><summary>Gelirimin ne kadarı kredi taksidine gitmeli?</summary><p class="muted">Genel kural %30’u geçmemesidir. Aracımız gelirinizi girerseniz size maksimum öneri sunar.</p></details>
+                <details><summary>Kredi notumu nasıl yükseltebilirim?</summary><p class="muted">Faturaları zamanında ödeyin, kredi kartı limitini aşmayın, borçları düzenli ödeyin, çok fazla başvuru yapmayın, kullanılmayan kartları kapatın.</p></details>
+                <details><summary>NakdiKredi bir banka mı?</summary><p class="muted">Hayır, bağımsız bir kredi hesaplama ve bilgi platformudur. Herhangi bir banka veya finans kuruluşu ile bağlantısı yoktur.</p></details>
+                <details><summary>Hesaplama sonuçları kesin mi?</summary><p class="muted">Hayır, tahminidir. Resmi ve kesin teklif için ilgili bankaya başvurmanız gerekir. Bu araç bilgilendirme amaçlıdır.</p></details>
             </div>
         </div>
     </section>
@@ -957,14 +1004,13 @@
         <a href="#sss">?<br>SSS</a>
     </div>
 
-    <!-- ===== JAVASCRIPT (TÜM YENİ ÖZELLİKLERLE) ===== -->
+    <!-- ===== JAVASCRIPT (TÜM ÖZELLİKLERLE) ===== -->
     <script>
         const $ = id => document.getElementById(id);
         const money = n => new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY', maximumFractionDigits: 2 })
             .format(n);
         const round = (v, d = 2) => Number(v.toFixed(d));
 
-        // Kredi hesaplama fonksiyonu
         function calc(P, r, n) {
             let i = r / 100,
                 p = i ? P * i * Math.pow(1 + i, n) / (Math.pow(1 + i, n) - 1) : P / n,
@@ -982,15 +1028,12 @@
             return { p: round(p), rows };
         }
 
-        // Ana hesaplama ve tüm güncellemeler
         function calculate() {
             let P = +$('amount').value || 0,
                 r = +$('rate').value || 0,
                 n = +$('term').value || 12,
                 inc = +$('income').value || 0;
-
             if (P <= 0 || r <= 0 || n < 1) { alert('Lütfen geçerli değerler girin.'); return; }
-
             const x = calc(P, r, n);
             const total = x.p * n;
             $('monthly').textContent = money(x.p);
@@ -999,22 +1042,15 @@
             $('summary').textContent =
                 `${money(P)} kredi, ${n} ay vade ve aylık %${r.toFixed(2)} faiz → aylık taksit ${money(x.p)}, toplam geri ödeme ${money(total)}.`;
 
-            // Ödeme planı
             $('schedule').innerHTML = x.rows.map(z =>
                 `<tr><td>${z.m}. ay</td><td>${money(z.p)}</td><td>${money(z.principal)}</td><td>${money(z.interest)}</td><td>${money(z.b)}</td><td>${money(z.cum)}</td></tr>`
             ).join('');
 
-            // Vade karşılaştırma
             renderVadeKarsilastirma(P, r);
-
-            // Popüler tutar tablosu
             renderPopulerTablo(r, n);
 
-            // Maksimum kredi önerisi (gelir bazlı)
             if (inc > 0) {
-                // %30 gelir taksit oranı ile max kredi
                 let maxTaksit = inc * 0.3;
-                // maxTaksit = P * i * (1+i)^n / ((1+i)^n -1) -> P'yi çek
                 let i = r / 100;
                 let maxP = maxTaksit * (Math.pow(1 + i, n) - 1) / (i * Math.pow(1 + i, n));
                 if (maxP > 0) {
@@ -1027,14 +1063,10 @@
                 $('maxLoanAdvice').innerHTML = '';
             }
 
-            // Grafikleri çiz
             drawCharts(x.rows, P);
-
-            // Erken ödeme simülasyonunu da güncelle
             simulateEarlyPayment();
         }
 
-        // Vade karşılaştırma
         function renderVadeKarsilastirma(P, r) {
             const container = document.getElementById('vadeKarsilastirma');
             const vadeler = [6, 12, 24, 36, 48, 60];
@@ -1052,11 +1084,9 @@
             container.innerHTML = html;
         }
 
-        // Popüler tutar tablosu (statik örnek - 36 ay ve %3,19 ile)
         function renderPopulerTablo(r, n) {
             const container = document.getElementById('populerTablo');
             const tutarlar = [50000, 100000, 150000, 200000, 250000, 500000, 750000, 1000000];
-            // Varsayılan 36 ay ve ortalama faiz (kullanıcının girdiğini kullan)
             let html = '';
             tutarlar.forEach(t => {
                 const sonuc = calc(t, r, n);
@@ -1070,32 +1100,26 @@
             container.innerHTML = html;
         }
 
-        // Grafik çizimi
         function drawCharts(rows, P) {
             const canvas = document.getElementById('chartCanvas');
             const ctx = canvas.getContext('2d');
             const w = canvas.width,
                 h = canvas.height;
             ctx.clearRect(0, 0, w, h);
-
             if (rows.length === 0) return;
             const maxVal = Math.max(...rows.map(r => r.p));
             const barWidth = w / rows.length * 0.7;
             const gap = w / rows.length * 0.3;
             const offset = 20;
-
             for (let i = 0; i < rows.length; i++) {
                 const x = i * (barWidth + gap) + gap / 2;
                 const hAnapara = (rows[i].principal / maxVal) * (h - 40);
                 const hFaiz = (rows[i].interest / maxVal) * (h - 40);
-                // Anapara (yeşil)
                 ctx.fillStyle = '#087c4d';
                 ctx.fillRect(x, h - 20 - hAnapara - hFaiz, barWidth, hAnapara);
-                // Faiz (kırmızı)
                 ctx.fillStyle = '#c0392b';
                 ctx.fillRect(x, h - 20 - hFaiz, barWidth, hFaiz);
             }
-            // Eksenler
             ctx.strokeStyle = '#ccc';
             ctx.lineWidth = 1;
             ctx.beginPath();
@@ -1103,7 +1127,6 @@
             ctx.lineTo(w, h - 20);
             ctx.stroke();
 
-            // İkinci grafik: kalan borç
             const canvas2 = document.getElementById('balanceChart');
             const ctx2 = canvas2.getContext('2d');
             const w2 = canvas2.width,
@@ -1120,7 +1143,6 @@
                 else ctx2.lineTo(x, h2 - 20 - y);
             }
             ctx2.stroke();
-            // Doldur
             ctx2.fillStyle = 'rgba(8,124,77,0.1)';
             ctx2.beginPath();
             ctx2.moveTo(0, h2 - 20);
@@ -1134,31 +1156,24 @@
             ctx2.fill();
         }
 
-        // Erken ödeme simülasyonu
         function simulateEarlyPayment() {
             const earlyMonth = parseInt($('earlyMonth').value) || 1;
             let P = +$('amount').value || 0,
                 r = +$('rate').value || 0,
                 n = +$('term').value || 12;
             if (P <= 0 || r <= 0 || n < 1) return;
-
             const full = calc(P, r, n);
             const totalFull = full.p * n;
             const totalInterestFull = totalFull - P;
-
-            // Erken ödeme yapılırsa (earlyMonth. ayda kalan borç kapatılır)
-            // O aya kadar ödenen toplam
-            let paidUpTo = 0;
-            let remainingAfterEarly = 0;
-            let interestPaidUpTo = 0;
+            let paidUpTo = 0,
+                interestPaidUpTo = 0;
             for (let i = 0; i < earlyMonth && i < full.rows.length; i++) {
                 paidUpTo += full.rows[i].p;
                 interestPaidUpTo += full.rows[i].interest;
             }
             if (earlyMonth <= full.rows.length) {
-                remainingAfterEarly = full.rows[earlyMonth - 1].b;
-                // Toplam erken ödeme maliyeti (kalan anapara + varsa erken kapama ücreti %2)
-                const earlyFee = remainingAfterEarly * 0.02; // varsayımsal
+                const remainingAfterEarly = full.rows[earlyMonth - 1].b;
+                const earlyFee = remainingAfterEarly * 0.02;
                 const totalEarlyCost = paidUpTo + remainingAfterEarly + earlyFee;
                 const earlyInterest = interestPaidUpTo;
                 const savedInterest = totalInterestFull - earlyInterest;
@@ -1176,14 +1191,12 @@
             }
         }
 
-        // Hızlı tutar
         function quick(v) {
             $('amount').value = v;
             calculate();
             location.hash = 'hesapla';
         }
 
-        // Paylaş
         function share() {
             const u = new URL(location.href);
             u.searchParams.set('tutar', $('amount').value);
@@ -1196,7 +1209,6 @@
             }
         }
 
-        // CSV İndir
         function exportCSV() {
             const rows = document.querySelectorAll('#schedule tr');
             if (rows.length === 0) { alert('Önce hesaplama yapın.'); return; }
@@ -1215,16 +1227,15 @@
             link.click();
         }
 
-        // Faiz ipucu güncelleme
         function updateRateHint() {
             const tur = $('krediTuru').value;
             const hint = document.getElementById('rateHint');
             const rateInput = $('rate');
             const suggestions = {
-                ihtiyac: 'İhtiyaç kredisi için güncel oranlar %2,5 – %4,5 arası',
-                konut: 'Konut kredisi için güncel oranlar %1,8 – %3,2 arası',
-                tasit: 'Taşıt kredisi için güncel oranlar %2,0 – %4,0 arası',
-                ticari: 'Ticari kredi oranları %2,0 – %5,5 arası değişir'
+                ihtiyac: 'İhtiyaç kredisi için örnek oran %3,19',
+                konut: 'Konut kredisi için örnek oran %2,49',
+                tasit: 'Taşıt kredisi için örnek oran %2,99',
+                ticari: 'Ticari kredi için örnek oran %3,49'
             };
             hint.textContent = suggestions[tur] || '';
             const sampleRates = { ihtiyac: 3.19, konut: 2.49, tasit: 2.99, ticari: 3.49 };
@@ -1233,7 +1244,6 @@
             }
         }
 
-        // Başlangıç
         (function() {
             const q = new URLSearchParams(location.search);
             if (q.get('tutar')) $('amount').value = q.get('tutar');
@@ -1243,8 +1253,6 @@
             $('krediTuru').addEventListener('change', updateRateHint);
             updateRateHint();
             calculate();
-
-            // Erken ödeme input değişince simülasyonu güncelle
             $('earlyMonth').addEventListener('input', simulateEarlyPayment);
         })();
     </script>
