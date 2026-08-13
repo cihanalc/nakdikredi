@@ -1,1260 +1,356 @@
+
 <!doctype html>
 <html lang="tr">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nakdi Kredi Hesaplama 2026 | Taksit, Faiz, Geri Ödeme ve Erken Ödeme Simülasyonu</title>
-    <meta name="description" content="Nakdi kredi hesaplama aracı ile ihtiyaç, konut, taşıt ve ticari kredilerin taksit, faiz, toplam maliyet, erken ödeme avantajı ve ödeme planını hesaplayın. 2026 örnek oranlar, grafikler ve karşılaştırmalar.">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://nakdikredi.com/">
-    <meta property="og:title" content="Nakdi Kredi Hesaplama 2026 – Tüm Krediler İçin Detaylı Hesaplama">
-    <meta property="og:description" content="Kredi taksit, toplam geri ödeme, faiz oranı, erken ödeme avantajı, grafikler ve ödeme planı – hepsi tek sayfada.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nakdikredi.com/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nakdi Kredi Hesaplama 2026">
-    <meta name="twitter:description" content="Tüm kredi türleri için detaylı hesaplama, grafikler ve simülasyonlar.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nakdi Kredi Hesaplama 2026 | Gerçek Maliyet, Taksit ve Kredi Rehberi</title>
+<meta name="description" content="Nakdi kredi hesaplama: KKDF/BSMV dahil gerçek taksit, toplam geri ödeme, ödeme planı ve gelir bazlı onay analizi. Güncel ihtiyaç kredisi ve kredi notu rehberi.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://nakdikredi.com/">
+<meta property="og:title" content="Nakdi Kredi Hesaplama | Gerçek Taksit ve Maliyet Analizi">
+<meta property="og:description" content="Vergiler dahil kredi taksitini hesapla, gelirine göre onay şansını gör ve uzman kredi rehberinden faydalan.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nakdikredi.com/">
 
-    <style>
-        /* ===== TAMAMEN YENİLENMİŞ STILLER ===== */
-        :root {
-            --g: #087c4d;
-            --g2: #064c32;
-            --ink: #102019;
-            --muted: #546b62;
-            --bg: #f4f8f6;
-            --white: #fff;
-            --line: #dbe7e1;
-            --soft: #e7f5ed;
-            --dark: #08150f;
-            --radius: 20px;
-            --shadow: 0 12px 40px rgba(8, 53, 34, 0.08);
-            --transition: 0.25s ease;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            background: var(--bg);
-            color: var(--ink);
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-        }
-        .wrap {
-            width: min(1200px, 94%);
-            margin: auto;
-        }
-        .top {
-            background: var(--dark);
-            color: #c9d8d2;
-            font-size: 11px;
-            padding: 8px 0;
-        }
-        .top .wrap {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: #f4f8f6ee;
-            border-bottom: 1px solid var(--line);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-        .nav {
-            height: 68px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .logo {
-            font-size: 23px;
-            font-weight: 950;
-            color: var(--ink);
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-        .logo b {
-            color: var(--g);
-        }
-        .links {
-            display: flex;
-            gap: 18px;
-            align-items: center;
-        }
-        .links a {
-            font-size: 11px;
-            font-weight: 900;
-            text-decoration: none;
-            color: var(--ink);
-            transition: color var(--transition);
-        }
-        .links a:hover {
-            color: var(--g);
-        }
-        .btn {
-            display: inline-block;
-            border: 0;
-            border-radius: 12px;
-            background: var(--g2);
-            color: #fff;
-            padding: 12px 20px;
-            font-weight: 900;
-            font-size: 14px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background var(--transition), transform 0.1s;
-        }
-        .btn:hover {
-            background: #053d26;
-        }
-        .btn:active {
-            transform: scale(0.96);
-        }
-        .btn.alt {
-            background: var(--soft);
-            color: var(--g2);
-        }
-        .btn.alt:hover {
-            background: #d5eee1;
-        }
-        .btn.small {
-            padding: 8px 14px;
-            font-size: 11px;
-        }
-        .hero {
-            padding: 72px 0 50px;
-            background: radial-gradient(circle at 85% 10%, #d7f2e4, transparent 36%), linear-gradient(#fbfdfc, #fff);
-        }
-        .ey {
-            font-size: 10px;
-            letter-spacing: 2px;
-            color: var(--g2);
-            font-weight: 950;
-            text-transform: uppercase;
-        }
-        .hero h1 {
-            font-size: clamp(42px, 7vw, 76px);
-            line-height: .94;
-            letter-spacing: -4px;
-            max-width: 950px;
-            margin: 14px 0;
-        }
-        .green {
-            color: var(--g);
-        }
-        .lead {
-            font-size: 17px;
-            line-height: 1.7;
-            color: var(--muted);
-            max-width: 820px;
-        }
-        .chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 7px;
-            margin-top: 20px;
-        }
-        .chip {
-            background: #fff;
-            border: 1px solid var(--line);
-            border-radius: 99px;
-            padding: 8px 14px;
-            font-size: 10px;
-            font-weight: 850;
-            color: var(--ink);
-        }
-        .section {
-            padding: 68px 0;
-        }
-        .section.alt {
-            background: #edf6f1;
-        }
-        .section.soft {
-            background: #f2faf5;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1.1fr .9fr;
-            gap: 24px;
-        }
-        .card {
-            background: #fff;
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            padding: 28px;
-            box-shadow: var(--shadow);
-        }
-        h2 {
-            font-size: clamp(31px, 5vw, 52px);
-            line-height: 1;
-            letter-spacing: -2.7px;
-            margin: 10px 0 16px;
-        }
-        h3 {
-            font-size: 1.3rem;
-            margin: 0 0 10px;
-        }
-        .muted {
-            color: var(--muted);
-            line-height: 1.75;
-        }
-        .fields {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 14px;
-        }
-        .field label {
-            display: block;
-            font-size: 9px;
-            font-weight: 950;
-            color: var(--muted);
-            margin-bottom: 6px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .field input,
-        .field select {
-            width: 100%;
-            padding: 13px 14px;
-            border: 1px solid #c9d9d1;
-            border-radius: 12px;
-            background: #fff;
-            font: inherit;
-            font-size: 15px;
-            transition: border var(--transition);
-        }
-        .field input:focus,
-        .field select:focus {
-            outline: none;
-            border-color: var(--g);
-        }
-        .actions {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 16px;
-        }
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 16px;
-        }
-        .stat {
-            background: var(--soft);
-            border-radius: 14px;
-            padding: 14px;
-        }
-        .stat small {
-            font-size: 8px;
-            color: var(--muted);
-            font-weight: 950;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .stat strong {
-            display: block;
-            font-size: 20px;
-            margin-top: 4px;
-        }
-        .notice {
-            background: #fff7e6;
-            border: 1px solid #ecd5a3;
-            color: #705628;
-            border-radius: 12px;
-            padding: 12px;
-            font-size: 10px;
-            line-height: 1.55;
-            margin-top: 16px;
-        }
-        .tablewrap {
-            overflow: auto;
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            margin-top: 12px;
-        }
-        .table {
-            border-collapse: collapse;
-            width: 100%;
-            min-width: 650px;
-            font-size: 11px;
-        }
-        .table th,
-        .table td {
-            padding: 10px 12px;
-            border-bottom: 1px solid var(--line);
-            text-align: right;
-        }
-        .table th:first-child,
-        .table td:first-child {
-            text-align: left;
-        }
-        .table th {
-            background: var(--soft);
-            font-size: 9px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 950;
-        }
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 14px;
-        }
-        .mini {
-            background: #fff;
-            border: 1px solid var(--line);
-            border-radius: 17px;
-            padding: 18px;
-        }
-        .mini p {
-            font-size: 11px;
-            color: var(--muted);
-            line-height: 1.65;
-        }
-        .mini a,
-        .mini .btn {
-            font-size: 10px;
-            margin-top: 8px;
-        }
-        .article {
-            background: #fff;
-            border: 1px solid var(--line);
-            border-radius: 20px;
-            padding: 28px;
-            margin-top: 16px;
-        }
-        .article h3 {
-            margin-top: 28px;
-        }
-        .article h3:first-child {
-            margin-top: 0;
-        }
-        .article p,
-        .article li {
-            color: #52635b;
-            line-height: 1.8;
-            font-size: 14px;
-        }
-        .article ul {
-            padding-left: 22px;
-        }
-        .toc {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-        .toc a {
-            background: var(--soft);
-            border-radius: 12px;
-            padding: 12px 8px;
-            text-decoration: none;
-            color: var(--g2);
-            font-size: 11px;
-            font-weight: 850;
-            text-align: center;
-            transition: background var(--transition);
-        }
-        .toc a:hover {
-            background: #d5eee1;
-        }
-        .faq {
-            border-top: 1px solid var(--line);
-        }
-        details {
-            border-bottom: 1px solid var(--line);
-            padding: 18px 0;
-        }
-        summary {
-            font-weight: 900;
-            cursor: pointer;
-            font-size: 1.05rem;
-        }
-        details p {
-            margin-top: 10px;
-        }
-        footer {
-            background: var(--dark);
-            color: #c9d8d2;
-            padding: 45px 0;
-            font-size: 11px;
-            line-height: 1.7;
-        }
-        footer a {
-            color: #b3ccc0;
-        }
-        .mobile {
-            display: none;
-        }
-        .compare-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 6px;
-            margin-top: 10px;
-        }
-        .compare-item {
-            background: var(--soft);
-            border-radius: 12px;
-            padding: 10px 4px;
-            text-align: center;
-            font-size: 9px;
-        }
-        .compare-item strong {
-            display: block;
-            font-size: 12px;
-            color: var(--g2);
-        }
-        .compare-item small {
-            display: block;
-            color: var(--muted);
-            font-size: 8px;
-        }
-        .chart-container {
-            background: #fff;
-            border-radius: 16px;
-            padding: 16px;
-            margin-top: 16px;
-            border: 1px solid var(--line);
-        }
-        .chart-container canvas {
-            width: 100% !important;
-            height: auto !important;
-            max-height: 220px;
-        }
-        .early-payment {
-            background: #f0f7f3;
-            border-radius: 14px;
-            padding: 16px;
-            margin-top: 16px;
-        }
-        .early-payment label {
-            font-size: 9px;
-            font-weight: 950;
-            color: var(--muted);
-            text-transform: uppercase;
-        }
-        .early-payment input {
-            width: 100px;
-            padding: 8px;
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            margin-right: 10px;
-        }
-        .populer-tablo {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 8px;
-            margin-top: 12px;
-        }
-        .populer-item {
-            background: var(--soft);
-            border-radius: 12px;
-            padding: 10px;
-            text-align: center;
-            cursor: pointer;
-            transition: background var(--transition);
-        }
-        .populer-item:hover {
-            background: #d5eee1;
-        }
-        .populer-item strong {
-            display: block;
-            font-size: 13px;
-            color: var(--g2);
-        }
-        .populer-item small {
-            font-size: 9px;
-            color: var(--muted);
-        }
-        .breadcrumb {
-            font-size: 10px;
-            color: var(--muted);
-            margin-bottom: 12px;
-        }
-        .breadcrumb a {
-            color: var(--g2);
-            text-decoration: none;
-        }
-        .flex {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .faiz-ornek-tablo {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 12px;
-            margin: 12px 0;
-        }
-        .faiz-ornek-tablo th,
-        .faiz-ornek-tablo td {
-            border: 1px solid var(--line);
-            padding: 8px 10px;
-            text-align: center;
-        }
-        .faiz-ornek-tablo th {
-            background: var(--soft);
-            font-weight: 900;
-        }
-        @media(max-width:850px) {
-            .links {
-                display: none;
-            }
-            .grid {
-                grid-template-columns: 1fr;
-            }
-            .cards {
-                grid-template-columns: 1fr 1fr;
-            }
-            .toc {
-                grid-template-columns: 1fr 1fr;
-            }
-            .compare-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        @media(max-width:560px) {
-            .top .wrap {
-                display: block;
-                text-align: center;
-            }
-            .hero {
-                padding-top: 48px;
-            }
-            .hero h1 {
-                letter-spacing: -2.5px;
-            }
-            .fields,
-            .cards,
-            .stats,
-            .toc,
-            .compare-grid,
-            .populer-tablo {
-                grid-template-columns: 1fr;
-            }
-            .mobile {
-                display: grid;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                z-index: 200;
-                background: #fff;
-                border-top: 1px solid var(--line);
-                grid-template-columns: repeat(4, 1fr);
-            }
-            .mobile a {
-                text-align: center;
-                text-decoration: none;
-                color: var(--ink);
-                font-size: 8px;
-                font-weight: 900;
-                padding: 10px;
-            }
-            footer {
-                padding-bottom: 75px;
-            }
-            .early-payment input {
-                width: 80px;
-            }
-        }
-    </style>
+<style>
+:root{--g:#087c4d;--g2:#064c32;--ink:#102019;--muted:#5c6e66;--bg:#f4f8f6;--white:#fff;--line:#dbe7e1;--soft:#e7f5ed;--dark:#08150f;--danger:#c92a2a;--danger-bg:#fff5f5;--warning:#e67700;--warning-bg:#fff9e6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+.wrap{width:min(1160px,92%);margin:auto}.top{background:var(--dark);color:#d9e6e1;font-size:11px;padding:8px}.top .wrap{display:flex;justify-content:space-between}
+nav{position:sticky;top:0;z-index:10;background:#f4f8f6ee;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:950;color:var(--ink);text-decoration:none;letter-spacing:-1px}.logo b{color:var(--g)}.links{display:flex;gap:18px}.links a{font-size:11px;font-weight:900;text-decoration:none;color:var(--ink)}
+.btn{display:inline-block;border:0;border-radius:12px;background:var(--g2);color:#fff;padding:12px 17px;font-weight:900;text-decoration:none;cursor:pointer;transition:transform 0.1s}.btn:active{transform:scale(0.97)}.btn.alt{background:var(--soft);color:var(--g2)}
+.hero{padding:60px 0 40px;background:radial-gradient(circle at 85% 10%,#d7f2e4,transparent 36%),linear-gradient(#fbfdfc,#fff)}.ey{font-size:10px;letter-spacing:2px;color:var(--g2);font-weight:950;text-transform:uppercase}.hero h1{font-size:clamp(38px,6vw,68px);line-height:.96;letter-spacing:-3px;max-width:950px;margin:14px 0}.green{color:var(--g)}.lead{font-size:16px;line-height:1.7;color:var(--muted);max-width:820px}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}.chip{background:#fff;border:1px solid var(--line);border-radius:99px;padding:7px 12px;font-size:11px;font-weight:800;color:var(--g2)}
+.section{padding:54px 0}.section.alt{background:#edf6f1}.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 12px 40px #0b35220b}
+h2{font-size:clamp(28px,4vw,46px);line-height:1.05;letter-spacing:-2px;margin:10px 0 16px}h3{margin:0 0 9px;font-size:18px}.muted{color:var(--muted);line-height:1.75}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field label{display:flex;justify-content:space-between;font-size:10px;font-weight:950;color:var(--muted);margin-bottom:6px}.field input[type="number"],.field select{width:100%;padding:13px;border:1px solid #c9d9d1;border-radius:12px;background:#fff;font:inherit;font-weight:600}
+.field input[type="range"]{width:100%;margin-top:8px;accent-color:var(--g);cursor:pointer}
+.checkbox-field{grid-column:1 / -1;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);padding:12px;border-radius:12px;cursor:pointer}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}.stat{background:var(--soft);border-radius:14px;padding:15px}.stat small{font-size:9px;color:var(--muted);font-weight:950}.stat strong{display:block;font-size:19px;margin-top:4px;letter-spacing:-0.5px}
+.visual-bar{display:flex;height:8px;border-radius:4px;overflow:hidden;margin-top:15px;background:var(--line)}.visual-bar .p{background:var(--g)}.visual-bar .i{background:#ff9800}
+.bar-legend{display:flex;justify-content:space-between;font-size:10px;font-weight:800;margin-top:6px;color:var(--muted)}
+.notice{border-radius:12px;padding:12px;font-size:11px;line-height:1.55;margin-top:14px;font-weight:600}.notice.info{background:#fff7e6;border:1px solid #ecd5a3;color:#705628;}.notice.success{background:#e9fac8;border:1px solid #c0eb75;color:#2b8a3e}.notice.danger{background:var(--danger-bg);border:1px solid #ffa8a8;color:var(--danger)}
+.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:16px}.table{border-collapse:collapse;width:100%;min-width:650px;font-size:12px}.table th,.table td{padding:12px;border-bottom:1px solid var(--line);text-align:right}.table th:first-child,.table td:first-child{text-align:left}.table th{background:var(--soft);font-size:10px;font-weight:900}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mini{background:#fff;border:1px solid var(--line);border-radius:17px;padding:18px;transition:box-shadow 0.2s}.mini:hover{box-shadow:0 8px 24px #0b35220b}.mini p{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:0}.mini a,.mini button{font-size:11px;color:var(--g2);font-weight:950;text-decoration:none;margin-top:8px;display:inline-block}
+.article-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.article-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.article-card h3{color:var(--g2);font-size:19px;margin-bottom:10px;border-bottom:2px solid var(--soft);padding-bottom:8px}
+.article-card p,.article-card li{font-size:13px;color:#405048;line-height:1.7}
+.article-card ul{padding-left:18px;margin:8px 0}
+.faq{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:17px 0}summary{font-weight:900;cursor:pointer;font-size:15px}
+footer{background:var(--dark);color:#c9d8d2;padding:45px 0;font-size:12px;line-height:1.7}.mobile{display:none}
+@media(max-width:850px){.links{display:none}.grid,.article-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.top .wrap{display:block;text-align:center}.hero{padding-top:36px}.hero h1{letter-spacing:-2px}.fields,.cards,.stats{grid-template-columns:1fr}.mobile{display:grid;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;border-top:1px solid var(--line);grid-template-columns:repeat(4,1fr)}.mobile a{text-align:center;text-decoration:none;color:var(--ink);font-size:9px;font-weight:900;padding:12px 0}footer{padding-bottom:75px}}
+</style>
 
-    <!-- JSON-LD ŞEMALARI (ZENGİNLEŞTİRİLMİŞ) -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [{
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://nakdikredi.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Kredi Hesaplama", "item": "https://nakdikredi.com/#hesapla" }
-                ]
-            }, {
-                "@type": "WebApplication",
-                "name": "Nakdi Kredi Hesaplama 2026",
-                "url": "https://nakdikredi.com/",
-                "applicationCategory": "FinanceApplication",
-                "operatingSystem": "All",
-                "browserRequirements": "HTML5, JavaScript",
-                "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
-                "description": "Kredi taksit, faiz, toplam geri ödeme, erken ödeme avantajı ve ödeme planı hesaplama aracı."
-            }, {
-                "@type": "HowTo",
-                "name": "Kredi Hesaplama Adımları",
-                "description": "Nakdi kredi hesaplama aracını kullanarak kredi maliyetinizi adım adım hesaplayın.",
-                "step": [
-                    { "@type": "HowToStep", "position": "1", "name": "Kredi tutarını girin" },
-                    { "@type": "HowToStep", "position": "2", "name": "Vade ve faiz oranını seçin" },
-                    { "@type": "HowToStep", "position": "3", "name": "Hesapla butonuna tıklayın" },
-                    { "@type": "HowToStep", "position": "4", "name": "Sonuçları ve ödeme planını inceleyin" }
-                ]
-            }, {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    { "@type": "Question", "name": "Kredi taksiti nasıl hesaplanır?", "acceptedAnswer": { "@type": "Answer",
-                            "text": "Kredi tutarı, aylık faiz oranı ve vade kullanılarak eşit taksit formülüyle hesaplanır. Aracımız bu hesaplamayı otomatik yapar." } },
-                    { "@type": "Question", "name": "Erken ödeme ne kadar faiz kazandırır?", "acceptedAnswer": { "@type": "Answer",
-                            "text": "Erken ödeme, kalan vadeye göre gelecekte ödenecek faizleri azaltır. Simülasyonumuzla avantajı görebilirsiniz." } },
-                    { "@type": "Question", "name": "En uygun vade nasıl seçilir?", "acceptedAnswer": { "@type": "Answer",
-                            "text": "Aylık bütçenize ve toplam maliyet hedefinize göre kısa vade (düşük faiz) veya uzun vade (düşük taksit) arasında seçim yapabilirsiniz." } }
-                ]
-            }]
-        }
-    </script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
+  {"@type":"WebSite","name":"NakdiKredi.com","url":"https://nakdikredi.com/"},
+  {"@type":"WebApplication","name":"Nakdi Kredi Hesaplama","url":"https://nakdikredi.com/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"}},
+  {"@type":"FAQPage","mainEntity":[
+   {"@type":"Question","name":"Banka taksiti neden ham faizden yüksek çıkar?","acceptedAnswer":{"@type":"Answer","text":"İhtiyaç kredilerinde faiz tutarı üzerinden %15 KKDF ve %15 BSMV vergisi eklenir. Bu vergi taksiti artırır."}},
+   {"@type":"Question","name":"Kredi taksiti aylık gelirimin en fazla kaçı olmalıdır?","acceptedAnswer":{"@type":"Answer","text":"Bankacılık standartlarına göre aylık toplam kredi taksitleriniz net belgelenebilir gelirinizin %50'sini geçmemelidir."}},
+   {"@type":"Question","name":"Krediyi erken ödersem faiz indirimi alır mıyım?","acceptedAnswer":{"@type":"Answer","text":"Evet, krediyi erken kapattığınızda veya ara ödeme yaptığınızda kalan vade için işlemesi gereken faiz ve vergiler silinir."}}
+  ]}
+ ]
+}
+</script>
 </head>
 
 <body>
-    <!-- TOP BAR -->
-    <div class="top">
-        <div class="wrap">
-            <span>NakdiKredi.com • Kredi hesaplama araçları</span>
-            <span>Sonuçlar tahmini • Bilgilendirme amaçlıdır</span>
-        </div>
-    </div>
+<div class="top"><div class="wrap"><span>NakdiKredi.com • Akıllı Kredi Hesaplama ve Finans Rehberi</span><span>Güncel Vergiler Dahil Analiz</span></div></div>
 
-    <!-- NAV -->
-    <nav>
-        <div class="wrap nav">
-            <a class="logo" href="#">Nakdi<b>Kredi</b>.com</a>
-            <div class="links">
-                <a href="#hesapla">Hesapla</a>
-                <a href="#kredi-turleri">Kredi Türleri</a>
-                <a href="#rehber">Rehber</a>
-                <a href="#sss">SSS</a>
-                <a href="#blog">Blog</a>
-            </div>
-            <a class="btn" href="#hesapla">Kredi Hesapla</a>
-        </div>
-    </nav>
+<nav><div class="wrap nav"><a class="logo" href="#">Nakdi<b>Kredi</b></a><div class="links"><a href="#hesapla">Hesapla</a><a href="#rehber">Kredi Rehberi</a><a href="#sss">SSS</a></div><a class="btn" href="#hesapla">Kredi Hesapla</a></div></nav>
 
-    <!-- HERO -->
-    <header class="hero">
-        <div class="wrap">
-            <div class="breadcrumb"><a href="#">Ana Sayfa</a> › Kredi Hesaplama</div>
-            <div class="ey">NAKDİ KREDİ • 2026 ÖRNEK HESAPLAMA</div>
-            <h1>Kredinin taksidini değil, <span class="green">gerçek maliyetini</span> anla.</h1>
-            <p class="lead">İhtiyaç, konut, taşıt veya ticari kredi – tutar, vade ve faiz oranını girerek aylık taksit, toplam geri ödeme, faiz tutarı, erken ödeme avantajı ve detaylı ödeme planını görsel grafiklerle inceleyin.</p>
-            <div class="chips">
-                <span class="chip">Kredi hesaplama</span>
-                <span class="chip">İhtiyaç kredisi</span>
-                <span class="chip">Konut kredisi</span>
-                <span class="chip">Taşıt kredisi</span>
-                <span class="chip">Kredi faiz hesaplama</span>
-                <span class="chip">Erken ödeme</span>
-                <span class="chip">Kredi notu</span>
-                <span class="chip">Kredi karşılaştırma</span>
-            </div>
-        </div>
-    </header>
+<header class="hero">
+<div class="wrap">
+<div class="ey">2026 GERÇEK MALİYET HESAPLAYICI</div>
+<h1>Kredinin taksidini değil, <span class="green">gerçek maliyetini</span> öğren.</h1>
+<p class="lead">Banka vergileri (%15 KKDF + %15 BSMV) dahil net ödeme planını oluştur, gelirine göre kredi onay riskini saniyeler içinde analiz et.</p>
+<div class="chips">
+    <span class="chip">✓ KKDF & BSMV Hesaplama</span>
+    <span class="chip">✓ Gelir-Taksit Dengesi Analizi</span>
+    <span class="chip">✓ Amortisman Ödeme Planı</span>
+    <span class="chip">✓ Kredi Notu Taktikleri</span>
+</div>
+</div>
+</header>
 
-    <!-- ANA HESAPLAMA ALANI -->
-    <section id="hesapla" class="section" style="padding-top:30px">
-        <div class="wrap grid">
-            <!-- Sol kart: hesaplayıcı -->
-            <div class="card">
-                <div class="ey">KREDİ HESAPLAYICI</div>
-                <h2 style="font-size:35px">Kredini hesapla, karşılaştır.</h2>
-                <div class="fields">
-                    <div class="field">
-                        <label>Kredi Türü</label>
-                        <select id="krediTuru" onchange="updateRateHint()">
-                            <option value="ihtiyac">İhtiyaç Kredisi</option>
-                            <option value="konut">Konut Kredisi</option>
-                            <option value="tasit">Taşıt Kredisi</option>
-                            <option value="ticari">Ticari Kredi</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label>KREDİ TUTARI (TL)</label>
-                        <input id="amount" type="number" value="100000" step="1000">
-                    </div>
-                    <div class="field">
-                        <label>VADE (AY)</label>
-                        <select id="term">
-                            <option value="6">6</option>
-                            <option value="12">12</option>
-                            <option value="18">18</option>
-                            <option value="24">24</option>
-                            <option selected value="36">36</option>
-                            <option value="48">48</option>
-                            <option value="60">60</option>
-                            <option value="72">72</option>
-                            <option value="84">84</option>
-                            <option value="120">120</option>
-                            <option value="180">180</option>
-                            <option value="240">240</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label>AYLIK FAİZ (%)</label>
-                        <input id="rate" type="number" value="3.19" step="0.01">
-                        <div style="font-size:9px;color:var(--muted);margin-top:4px;" id="rateHint">İhtiyaç kredisi için örnek oran %3,19</div>
-                    </div>
-                    <div class="field" style="grid-column:span 2">
-                        <label>AYLIK GELİR (TL) – Öneri için</label>
-                        <input id="income" type="number" value="40000" step="1000">
-                    </div>
-                </div>
-                <div class="actions">
-                    <button class="btn" onclick="calculate()">Hesapla</button>
-                    <button class="btn alt" onclick="share()">Senaryoyu paylaş</button>
-                    <button class="btn alt small" onclick="exportCSV()">CSV İndir</button>
-                </div>
-                <div class="stats">
-                    <div class="stat"><small>AYLIK TAKSİT</small><strong id="monthly">—</strong></div>
-                    <div class="stat"><small>TOPLAM GERİ ÖDEME</small><strong id="total">—</strong></div>
-                    <div class="stat"><small>TOPLAM FAİZ</small><strong id="interest">—</strong></div>
-                </div>
-                <div id="maxLoanAdvice" style="background:#f0f7f3;border-radius:12px;padding:12px;margin-top:12px;font-size:12px;color:var(--g2);"></div>
-                <div class="notice">
-                    <strong>⚠️ Bilgilendirme:</strong> Hesaplamalar örnek matematiksel varsayımlara dayanır. Vergi, sigorta, tahsis ücreti ve diğer ürün koşulları gerçek maliyeti değiştirebilir.
-                </div>
-            </div>
+<section id="hesapla" class="section" style="padding-top:10px">
+<div class="wrap grid">
+<div class="card">
+<div class="ey">GELİŞMİŞ KREDİ MOTORU</div><h2 style="font-size:32px; margin-bottom:20px;">Kredini Şekillendir</h2>
+<div class="fields">
+<div class="field" style="grid-column: 1 / -1;">
+    <label>KREDİ TUTARI (TL) <span id="valAmount">100.000 TL</span></label>
+    <input id="amount" type="number" value="100000" step="5000" oninput="sync('amount','sliderAmount');calculate()">
+    <input id="sliderAmount" type="range" min="5000" max="2000000" step="5000" value="100000" oninput="sync('sliderAmount','amount');calculate()">
+</div>
+<div class="field">
+    <label>VADE (AY) <span id="valTerm">36 Ay</span></label>
+    <select id="term" onchange="sync('term','sliderTerm');calculate()">
+        <option value="3">3 Ay</option><option value="6">6 Ay</option><option value="12">12 Ay</option><option value="18">18 Ay</option>
+        <option value="24">24 Ay</option><option value="36" selected>36 Ay</option><option value="48">48 Ay</option><option value="60">60 Ay</option>
+    </select>
+    <input id="sliderTerm" type="range" min="3" max="60" step="1" value="36" oninput="syncRangeToSelect('sliderTerm','term');calculate()">
+</div>
+<div class="field">
+    <label>AYLIK FAİZ (%) <span id="valRate">%3.19</span></label>
+    <input id="rate" type="number" value="3.19" step=".01" oninput="calculate()">
+</div>
+<div class="field" style="grid-column: 1 / -1;">
+    <label>AYLIK NET GELİRİNİZ (Onay Analizi İçin)</label>
+    <input id="income" type="number" value="45000" step="1000" placeholder="Örn: 45000" oninput="calculate()">
+</div>
+<label class="checkbox-field">
+    <input type="checkbox" id="taxes" checked onchange="calculate()">
+    İhtiyaç Kredisi Vergilerini Hesaba Kat (%15 KKDF + %15 BSMV)
+</label>
+</div>
 
-            <!-- Sağ kart: hızlı erişim ve karşılaştırma -->
-            <div class="card">
-                <div class="ey">HIZLI SENARYOLAR</div>
-                <h3>Popüler kredi tutarları</h3>
-                <div class="cards" style="grid-template-columns:1fr 1fr">
-                    <div class="mini"><button class="btn alt small" onclick="quick(50000)">50.000 TL</button></div>
-                    <div class="mini"><button class="btn alt small" onclick="quick(100000)">100.000 TL</button></div>
-                    <div class="mini"><button class="btn alt small" onclick="quick(150000)">150.000 TL</button></div>
-                    <div class="mini"><button class="btn alt small" onclick="quick(200000)">200.000 TL</button></div>
-                    <div class="mini"><button class="btn alt small" onclick="quick(250000)">250.000 TL</button></div>
-                    <div class="mini"><button class="btn alt small" onclick="quick(500000)">500.000 TL</button></div>
-                    <div class="mini"><button class="btn alt small" onclick="quick(750000)">750.000 TL</button></div>
-                    <div class="mini"><button class="btn alt small" onclick="quick(1000000)">1.000.000 TL</button></div>
-                </div>
-                <p class="muted" id="summary" style="margin-top:10px;"></p>
-                <hr style="border:0;border-top:1px solid var(--line);margin:15px 0;">
-                <div class="ey">VADE KARŞILAŞTIRMA</div>
-                <p style="font-size:10px;color:var(--muted);">Aynı tutar ve faizle farklı vadelerde maliyetler</p>
-                <div id="vadeKarsilastirma" class="compare-grid"></div>
+<div class="stats">
+    <div class="stat"><small>AYLIK TAKSİT</small><strong id="monthly">—</strong></div>
+    <div class="stat"><small>TOPLAM GERİ ÖDEME</small><strong id="total">—</strong></div>
+    <div class="stat"><small>FAİZ + VERGİ</small><strong id="interest">—</strong></div>
+</div>
 
-                <hr style="border:0;border-top:1px solid var(--line);margin:15px 0;">
-                <div class="ey">POPÜLER TUTAR TABLOSU</div>
-                <p style="font-size:10px;color:var(--muted);">Örnek hesaplama (36 ay, %3,19 faiz)</p>
-                <div id="populerTablo" class="populer-tablo"></div>
-            </div>
-        </div>
-    </section>
+<div class="visual-bar">
+    <div class="p" id="barP" style="width: 50%"></div>
+    <div class="i" id="barI" style="width: 50%"></div>
+</div>
+<div class="bar-legend">
+    <span>Ana Para: <span id="legendP">%50</span></span>
+    <span style="color:#e67700">Maliyet: <span id="legendI">%50</span></span>
+</div>
 
-    <!-- GRAFİK VE ERKEN ÖDEME BÖLÜMÜ -->
-    <section class="section alt">
-        <div class="wrap">
-            <div class="ey">GÖRSEL ANALİZ</div>
-            <h2>Kredinin grafikle anlamı.</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Anapara & Faiz Dağılımı</h3>
-                    <div class="chart-container">
-                        <canvas id="chartCanvas" width="400" height="200"></canvas>
-                    </div>
-                    <p style="font-size:10px;color:var(--muted);margin-top:6px;">Kırmızı = Faiz, Yeşil = Anapara (her ay ödenen kısım)</p>
-                </div>
-                <div class="card">
-                    <h3>Kalan Borç Grafiği</h3>
-                    <div class="chart-container">
-                        <canvas id="balanceChart" width="400" height="200"></canvas>
-                    </div>
-                    <p style="font-size:10px;color:var(--muted);margin-top:6px;">Zamanla azalan kalan anapara</p>
-                </div>
-            </div>
+<div id="healthAlert" class="notice info">Hesaplanıyor...</div>
 
-            <!-- Erken ödeme simülasyonu -->
-            <div class="card" style="margin-top:20px;">
-                <div class="ey">ERKEN ÖDEME SİMÜLASYONU</div>
-                <h3>Hangi ayda kapatırsan ne kadar faizden kurtulursun?</h3>
-                <div class="flex">
-                    <label>Kapatılacak ay: <input type="number" id="earlyMonth" value="12" min="1" max="240" style="width:80px;"></label>
-                    <button class="btn small" onclick="simulateEarlyPayment()">Hesapla</button>
-                </div>
-                <div id="earlyResult" style="margin-top:12px;font-size:14px;background:var(--soft);padding:12px;border-radius:12px;">
-                    Kalan vade ve faiz avantajı burada görünecek.
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="actions">
+    <button class="btn alt" onclick="share()">Senaryoyu Kopyala / Paylaş</button>
+</div>
+</div>
 
-    <!-- ÖDEME PLANI -->
-    <section class="section">
-        <div class="wrap">
-            <div class="ey">DETAYLI ÖDEME PLANI</div>
-            <h2>Kredinin her ayını gör.</h2>
-            <div class="tablewrap">
-                <table class="table">
-                    <thead><tr><th>Ay</th><th>Taksit</th><th>Anapara</th><th>Faiz</th><th>Kalan Borç</th><th>Kümülatif Faiz</th></tr></thead>
-                    <tbody id="schedule"></tbody>
-                </table>
-            </div>
-        </div>
-    </section>
+<div class="card">
+<div class="ey">HIZLI HESAPLAMA</div><h3 style="margin-bottom:16px;">Sık Aranılan Kredi Senaryoları</h3>
+<div class="cards" style="grid-template-columns:1fr 1fr">
+<div class="mini"><button class="btn alt" style="width:100%" onclick="quick(50000)">50.000 TL</button></div>
+<div class="mini"><button class="btn alt" style="width:100%" onclick="quick(100000)">100.000 TL</button></div>
+<div class="mini"><button class="btn alt" style="width:100%" onclick="quick(150000)">150.000 TL</button></div>
+<div class="mini"><button class="btn alt" style="width:100%" onclick="quick(200000)">200.000 TL</button></div>
+<div class="mini"><button class="btn alt" style="width:100%" onclick="quick(300000)">300.000 TL</button></div>
+<div class="mini"><button class="btn alt" style="width:100%" onclick="quick(500000)">500.000 TL</button></div>
+</div>
+<p class="muted" id="summary" style="margin-top: 24px; font-size: 13px;"></p>
+</div>
+</div>
+</section>
 
-    <!-- KREDİ TÜRLERİ (detaylı açıklamalar) -->
-    <section id="kredi-turleri" class="section alt">
-        <div class="wrap">
-            <div class="ey">FARKLI KREDİ TÜRLERİ</div>
-            <h2>İhtiyacına göre kredi seç.</h2>
-            <div class="cards">
-                <div class="mini">
-                    <h3>💰 İhtiyaç Kredisi</h3>
-                    <p>Nakit ihtiyaçlar için teminatsız, 6-60 ay vade. Genelde 1.000 – 500.000 TL arası. Faiz oranları kredi notuna göre değişir. Hızlı başvuru, kısa sürede sonuç.</p>
-                </div>
-                <div class="mini">
-                    <h3>🏠 Konut Kredisi</h3>
-                    <p>İpotek karşılığı uzun vadeli (120-240 ay) düşük faiz. Ev alımı veya yenileme için. Vergi avantajları ve devlet destekleri olabilir.</p>
-                </div>
-                <div class="mini">
-                    <h3>🚗 Taşıt Kredisi</h3>
-                    <p>Yeni/ikinci el araç için 48 aya kadar vade. Faiz oranları aracın yaşına göre değişir (0-3 yaş avantajlı). Kasko zorunluluğu vardır.</p>
-                </div>
-                <div class="mini">
-                    <h3>🏢 Ticari Kredi</h3>
-                    <p>İşletme sermayesi, yatırım veya nakit akışı için esnek koşullar. Tutar ve vade kurumdan kuruma değişir, genellikle teminat istenir.</p>
-                </div>
-                <div class="mini">
-                    <h3>📱 Dijital Kredi</h3>
-                    <p>Mobil bankacılık üzerinden anında başvuru, dakikalar içinde sonuç. Küçük tutarlı (10.000 – 50.000 TL) ve kısa vadeli (3-12 ay).</p>
-                </div>
-                <div class="mini">
-                    <h3>🔄 Kredi Yapılandırma</h3>
-                    <p>Mevcut kredileri daha düşük faiz veya uzun vadeyle yeniden düzenleyerek taksitleri azaltın. Bankadan bankaya farklılık gösterir.</p>
-                </div>
-            </div>
+<!-- ÖDEME PLANI TABLE -->
+<section class="section alt">
+<div class="wrap">
+<div class="ey">DETAYLI AMORTİSMAN TABLOSU</div><h2>Aylık Ödeme Planınız</h2>
+<div class="tablewrap"><table class="table">
+    <thead><tr><th>Ay</th><th>Taksit</th><th>Anapara</th><th>Faiz</th><th>Vergi (KKDF+BSMV)</th><th>Kalan Borç</th></tr></thead>
+    <tbody id="schedule"></tbody>
+</table></div>
+</div>
+</section>
 
-            <!-- Örnek faiz tablosu (güncel değil, varsayımsal) -->
-            <div style="margin-top:30px;">
-                <div class="ey">ÖRNEK FAİZ ORANLARI (VARSayıMSAL)</div>
-                <p style="font-size:12px;color:var(--muted);">Aşağıdaki oranlar örnek amaçlıdır, güncel değildir. Bankalardan teyit alınız.</p>
-                <table class="faiz-ornek-tablo">
-                    <thead>
-                        <tr><th>Kredi Türü</th><th>Vade Aralığı</th><th>Örnek Aylık Faiz (%)</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>İhtiyaç Kredisi</td><td>6 – 60 ay</td><td>2,50 – 4,50</td></tr>
-                        <tr><td>Konut Kredisi</td><td>120 – 240 ay</td><td>1,80 – 3,20</td></tr>
-                        <tr><td>Taşıt Kredisi (0-3 yaş)</td><td>12 – 48 ay</td><td>2,00 – 3,50</td></tr>
-                        <tr><td>Taşıt Kredisi (4+ yaş)</td><td>12 – 36 ay</td><td>3,50 – 5,00</td></tr>
-                        <tr><td>Ticari Kredi</td><td>6 – 60 ay</td><td>2,50 – 5,50</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
+<!-- EN ÇOK ARANAN BİLGİ MAKELERİ -->
+<section id="rehber" class="section">
+<div class="wrap">
+<div class="ey">UZMAN FİNANS REHBERİ</div>
+<h2>Kredi Çekmeden Önce Bilmeniz Gerekenler</h2>
+<p class="muted">Arama motorlarında kullanıcıların en çok cevabını aradığı finansal kurallar ve stratejiler.</p>
 
-    <!-- KAPSAMLI REHBER (tüm yazılar tam metin) -->
-    <section id="rehber" class="section">
-        <div class="wrap">
-            <div class="ey">KAPSAMLI KREDİ REHBERİ</div>
-            <h2>Kredi almadan önce bilinmesi gerekenler.</h2>
-            <div class="toc">
-                <a href="#ihtiyac">İhtiyaç kredisi nedir?</a>
-                <a href="#faiz">Faiz oranı nasıl okunur?</a>
-                <a href="#vade">Vade nasıl seçilir?</a>
-                <a href="#maliyet">Toplam maliyet nedir?</a>
-                <a href="#not">Kredi notu nedir?</a>
-                <a href="#erken">Erken ödeme nedir?</a>
-                <a href="#konut">Konut kredisi avantajları</a>
-                <a href="#tasit">Taşıt kredisi ipuçları</a>
-                <a href="#banka">Banka seçimi</a>
-                <a href="#kredi-turleri">Kredi türleri karşılaştırması</a>
-                <a href="#gelir">Gelire göre kredi belirleme</a>
-                <a href="#sigorta">Kredi sigortası nedir?</a>
-            </div>
+<div class="article-grid">
+    <article class="article-card">
+        <h3>1. İhtiyaç Kredisinde BDDK Vade Sınırları Nedir?</h3>
+        <p>Bankacılık Düzenleme ve Denetleme Kurulu (BDDK) kararlarına göre çekmek istediğiniz kredi tutarına göre maksimum vade sınırları uygulanır:</p>
+        <ul>
+            <li><b>50.000 TL ve altı:</b> Azami 36 ay vade</li>
+            <li><b>50.000 TL - 100.000 TL arası:</b> Azami 24 ay vade</li>
+            <li><b>100.000 TL üzeri:</b> Azami 12 ay vade</li>
+        </ul>
+        <p>Bu sınırların üzerindeki vadeler bankalar tarafından mevzuat gereği tanımlanamamaktadır.</p>
+    </article>
 
-            <!-- Tüm makaleler tam metin -->
-            <article class="article" id="ihtiyac">
-                <h3>İhtiyaç kredisi nedir?</h3>
-                <p>İhtiyaç kredisi, bireylerin kişisel harcamaları (tatil, sağlık, eğitim, ev eşyası, tadilat vb.) için kullandığı teminatsız bir kredi türüdür. Bankalar genellikle 1.000 TL ile 500.000 TL arasında değişen tutarlarda, 6 ay ile 60 ay arasında vade seçenekleri sunar. Faiz oranları, kullanıcının kredi notuna, gelir durumuna ve bankanın politikasına göre değişkenlik gösterir. İhtiyaç kredisinde ipotek veya kefil gibi teminatlar genelde aranmaz, bu da başvuru sürecini hızlandırır. Ancak teminatsız olduğu için faiz oranları konut veya taşıt kredisine göre daha yüksektir. Kredi kullanmadan önce sadece aylık taksit tutarına değil, toplam geri ödeme miktarına ve faiz oranına da odaklanmak önemlidir. Ayrıca dosya masrafı, sigorta ve vergi gibi ek maliyetler toplam maliyeti artırabilir. Bu nedenle bankaların sunduğu yıllık maliyet oranını (APR) incelemek, gerçek maliyeti anlamak için en doğru yoldur.</p>
-            </article>
+    <article class="article-card">
+        <h3>2. Kredi Onayını Etkileyen Gelir/Taksit Oranı (%50 Kuralı)</h3>
+        <p>Bankalar kredi başvurunuzu değerlendirirken en çok <b>Hanehalkı Gelir/Taksit Oranına</b> dikkat eder. Yasal ve finansal kural gereği, aylık ödeyeceğiniz tüm kredi ve kredi kartı taksitlerinin toplamı, belgelenebilir net aylık gelirinizin <b>%50'sini geçmemelidir</b>.</p>
+        <p>Örneğin; 40.000 TL net geliriniz varsa, toplam aylık borç taksitleriniz 20.000 TL sınırını aştığında kredi onay şansınız ciddi oranda düşer.</p>
+    </article>
 
-            <article class="article" id="faiz">
-                <h3>Kredi faiz oranı nasıl okunur?</h3>
-                <p>Kredi tekliflerinde en dikkat çeken unsur aylık faiz oranıdır. Ancak aylık faiz oranı, kredinin toplam maliyetini tek başına göstermez. Bankalar faiz oranına ek olarak <strong>KKDF (Kaynak Kullanımını Destekleme Fonu)</strong> ve <strong>BSMV (Bankacılık ve Sigorta Muameleleri Vergisi)</strong> gibi vergileri de yansıtır. Ayrıca dosya masrafı, tahsis ücreti, sigorta primleri gibi kalemler de toplam maliyeti etkiler. Bu nedenle iki bankanın aylık faiz oranı aynı olsa bile toplam maliyet farklı olabilir. Tüketicilerin <strong>Yıllık Maliyet Oranı (APR)</strong>'na bakması önerilir. APR, tüm masrafları içeren yıllık yüzde oranıdır ve kredinin gerçek maliyetini karşılaştırmak için en sağlıklı göstergedir. NakdiKredi hesaplayıcısı, anapara, aylık taksit ve toplam faizi ayrı ayrı göstererek kullanıcının maliyeti daha net görmesini sağlar.</p>
-            </article>
+    <article class="article-card">
+        <h3>3. KKDF ve BSMV Vergileri Taksitinizi Nasıl Etkiler?</h3>
+        <p>İhtiyaç kredilerinde bankanın belirlediği faiz oranına ek olarak devlete ödenen iki yasal vergi bulunur:</p>
+        <ul>
+            <li><b>KKDF (Kaynak Kullanımını Destekleme Fonu):</b> Faiz tutarı üzerinden %15</li>
+            <li><b>BSMV (Banka ve Sigorta Muameleleri Vergisi):</b> Faiz tutarı üzerinden %15</li>
+        </ul>
+        <p>Bu vergiler faizinize %30 oranında ek maliyet getirir. Hesaplayıcımızdaki "Vergileri Hesaba Kat" seçeneği, bankadan alacağınız teklifle birebir aynı taksiti görmenizi sağlar.</p>
+    </article>
 
-            <article class="article" id="vade">
-                <h3>Kredi vadesi nasıl seçilir?</h3>
-                <p>Vade seçimi, aylık bütçeniz ve toplam maliyet hedefiniz arasındaki dengeye göre belirlenmelidir. <strong>Kısa vade</strong> (örneğin 12-24 ay) aylık taksit miktarını yükseltir, ancak toplamda ödediğiniz faiz düşer. <strong>Uzun vade</strong> (36-60 ay veya daha fazla) ise aylık taksiti azaltır, fakat toplam faiz yükü önemli ölçüde artar. Örneğin 100.000 TL krediyi 36 ay vadede kullanırsanız aylık taksit yaklaşık 4.500 TL, toplam geri ödeme 162.000 TL civarında olabilir. Aynı krediyi 60 ay vadede kullanırsanız aylık taksit 3.500 TL’ye düşer, ancak toplam geri ödeme 210.000 TL’ye çıkar. Bu nedenle en düşük taksit her zaman en avantajlı seçenek değildir. Bütçenize uygun taksit ile makul toplam faiz arasında bir denge bulmak gerekir. NakdiKredi’nin vade karşılaştırma tablosu, farklı vadelerdeki maliyetleri aynı ekranda görerek karar vermenizi kolaylaştırır.</p>
-            </article>
+    <article class="article-card">
+        <h3>4. Kredi Notu (Findeks) Nasıl Yükseltilir?</h3>
+        <p>Kredi notunuz 1 ile 1900 arasında değişir. Kredinizin sorunsuz onaylanması için ideal puan <b>1500 ve üzeridir</b>. Puanınızı hızlıca yükseltmek için:</p>
+        <ul>
+            <li>Kredi kartı ekstrelerinizin asgari tutarını değil, <b>tamamını</b> ödeyin.</li>
+            <li>Son ödeme gününü 1 gün bile geçirmemeye özen gösterin.</li>
+            <li>Gereksiz yere üst üste farklı bankalardan kredi başvurusunda bulunmayın (Her başvuru puanı biraz düşürür).</li>
+        </ul>
+    </article>
 
-            <article class="article" id="maliyet">
-                <h3>Toplam kredi maliyeti nedir?</h3>
-                <p>Toplam kredi maliyeti, kullandığınız anapara ile birlikte ödediğiniz tüm faiz, vergi, sigorta, dosya masrafı ve diğer ücretlerin toplamıdır. Bankalar genellikle bu kalemleri ayrı ayrı belirtir, ancak bazı durumlarda tek bir “tahsis ücreti” veya “dosya masrafı” altında toplayabilir. Tüketici olarak sözleşmeyi imzalamadan önce tüm bu kalemleri tek tek incelemeniz gerekir. “Faizsiz kredi” kampanyaları bile sigorta ve dosya masrafı içerebilir, bu yüzden toplam geri ödeme tutarına bakmak her zaman daha güvenlidir. NakdiKredi, anapara, toplam faiz ve toplam geri ödemeyi net bir şekilde göstererek kullanıcının maliyeti doğru değerlendirmesine yardımcı olur.</p>
-            </article>
+    <article class="article-card">
+        <h3>5. Krediyi Erken Kapatmak Kârlı mıdır?</h3>
+        <p>Evet, ihtiyaç kredisini vadesinden önce kapatmak veya ara ödeme yapmak ciddi faiz tasarrufu sağlar. Bireysel kredilerde erken kapama yapıldığında, kalan aylara ait işlenmemiş faiz ve bu faizin vergileri (KKDF/BSMV) tamamen silinir. Konut kredilerinden farklı olarak ihtiyaç kredilerinde erken kapama cezası/tazminatı bulunmamaktadır.</p>
+    </article>
 
-            <article class="article" id="not">
-                <h3>Kredi notu ve önemi</h3>
-                <p>Kredi notu, Findeks gibi kredi kayıt büroları tarafından hesaplanan ve bireylerin ödeme alışkanlıklarını, kredi geçmişini ve mali durumunu yansıtan bir puandır. 0 ile 1900 arasında değişir. 1000 puan üzeri genellikle “iyi” olarak kabul edilir ve bankalar bu notu yüksek olan kişilere daha düşük faiz oranları ve daha yüksek kredi limitleri sunar. Kredi notunu yükseltmek için faturaları zamanında ödemek, kredi kartı limitini aşmamak, mevcut borçları düzenli olarak ödemek ve kısa sürede çok sayıda kredi başvurusu yapmamak gerekir. Her kredi başvurusu kredi notunu bir miktar düşürebilir. Bu nedenle başvuru yapmadan önce teklifleri karşılaştırmak ve en uygun seçeneğe başvurmak önerilir.</p>
-            </article>
+    <article class="article-card">
+        <h3>6. Dosya Masrafı (Kredi Tahsis Ücreti) Ne Kadardır?</h3>
+        <p>Yasal düzenlemelere göre bankalar, çekilen kredi anaparasının <b>binde 5'inden (%0.5)</b> fazla dosya masrafı kesemez. Örneğin; 100.000 TL kredi çektiğinizde ödeyeceğiniz azami dosya masrafı 500 TL + %15 BSMV vergisidir.</p>
+    </article>
+</div>
+</div>
+</section>
 
-            <article class="article" id="erken">
-                <h3>Erken ödeme avantajı</h3>
-                <p>Kredinizi vadesinden önce kapatmak, kalan vadede ödeyeceğiniz faizlerden kurtulmanızı sağlar. Ancak bankalar erken kapama durumunda %1 ile %2 arasında değişen bir erken kapama ücreti talep edebilir (bu oran sözleşmeye göre değişir). Erken ödeme yapmadan önce kalan anapara, erken kapama ücreti ve toplamda ne kadar faizden kurtulacağınızı hesaplamak önemlidir. NakdiKredi’nin erken ödeme simülasyonu, hangi ayda kapatırsanız ne kadar faiz avantajı elde edeceğinizi gösterir. Kesin tutar için bankanızdan resmi bir hesaplama almanız önerilir.</p>
-            </article>
+<!-- SSS SECTION -->
+<section id="sss" class="section alt">
+<div class="wrap"><div class="ey">BİLGİ BANKASI</div><h2>Arama Motorlarında En Çok Sorulanlar</h2>
+<div class="faq">
+<details open><summary>Banka taksiti neden buradaki ham faizden yüksek çıkıyor?</summary><p class="muted">Çünkü Türkiye'de ihtiyaç kredilerinde faiz tutarı üzerinden %15 KKDF ve %15 BSMV alınır. Hesaplayıcımızdaki "Vergileri hesaba kat" seçeneği bu yüzden vardır. Gerçek banka taksitini görmek için bu kutuyu işaretli bırakın.</p></details>
+<details><summary>Aynı anda birden fazla bankaya kredi başvurusu yapmak zararlı mı?</summary><p class="muted">Evet. Kısa süre içerisinde çok sayıda bankaya başvuru yapmak Kredi Kayıt Bürosu (KKB) sisteminde skoru düşürür ve bankalara "nakit sıkışıklığı" izlenimi vererek reddedilme riskini artırır.</p></details>
+<details><summary>Emekliler veya ev hanımları ihtiyaç kredisi çekebilir mi?</summary><p class="muted">Düzenli emekli maaşı olanlar maşlarını aldıkları bankalardan kolayca kredi çekebilirler. Belgelenebilir geliri olmayan veya ev hanımı olan kişilerin ise kefil göstermesi veya mevduat/gayrimenkul ipoteği sağlaması gerekebilir.</p></details>
+</div></div>
+</section>
 
-            <article class="article" id="konut">
-                <h3>Konut kredisi avantajları</h3>
-                <p>Konut kredisi, ipotek karşılığı kullanıldığı için diğer kredi türlerine göre daha düşük faiz oranlarına sahiptir. Vade süresi 120 aydan 240 aya kadar çıkabilir, bu da aylık taksitleri oldukça düşürür. Ayrıca bazı devlet destekleri (ilk ev alımında) ve vergi avantajlarından yararlanma imkânı vardır. Konut kredisi hesaplarken sadece faiz oranına değil, tapu harcı, ekspertiz ücreti, konut sigortası ve hayat sigortası gibi ek maliyetlere de dikkat etmek gerekir. Bu masraflar toplam maliyeti %5-10 artırabilir. Uzun vade düşük taksit sağlasa da toplam faiz yükünün yüksek olacağı unutulmamalıdır.</p>
-            </article>
+<footer><div class="wrap"><strong style="font-size:20px;color:#fff; display:block; margin-bottom:10px;">NakdiKredi.com</strong><p>Bu platformda sunulan veriler matematiksel simülasyonlardır. Kesin kredi faiz oranları ve onay durumları bankaların yapacağı finansal değerlendirme neticesinde kesinleşir.</p></div></footer>
 
-            <article class="article" id="tasit">
-                <h3>Taşıt kredisi ipuçları</h3>
-                <p>Taşıt kredisi, sıfır veya ikinci el araç alımında kullanılır. Aracın yaşı, faiz oranını doğrudan etkiler. 0-3 yaş arası araçlar için faiz oranları daha düşük, 4 yaş ve üzeri araçlar için daha yüksektir. Vade genellikle 48 ay ile sınırlıdır, ancak bazı bankalar 60 aya kadar vade sunabilir. Taşıt kredisi kullanırken kasko sigortası zorunludur ve bu masraf bütçeye eklenmelidir. Ayrıca aracın değerinin en fazla %80’i kredi olarak kullanılabilir, kalan %20’lik kısmı peşin ödemek gerekir. Kredi hesaplamasında faiz oranı, vade ve sigorta maliyetlerini toplam geri ödeme içinde değerlendirmek önemlidir.</p>
-            </article>
+<div class="mobile"><a href="#hesapla">⌁<br>Hesapla</a><a href="#schedule">▦<br>Plan</a><a href="#rehber">📖<br>Rehber</a><a href="#sss">?<br>SSS</a></div>
 
-            <article class="article" id="banka">
-                <h3>Banka seçimi nasıl yapılır?</h3>
-                <p>Kredi başvurusu yapmadan önce en az 3-5 farklı bankanın teklifini karşılaştırmak, en iyi seçeneği bulmak için kritiktir. Karşılaştırma yaparken sadece aylık faiz oranına değil, toplam maliyet oranına (APR), dosya masrafı, tahsis ücreti, sigorta zorunlulukları, erken ödeme cezası ve müşteri hizmetleri kalitesine dikkat edin. Ayrıca dijital bankalar genellikle daha düşük masraf ve daha hızlı başvuru sunar, ancak şube hizmeti gerekiyorsa geleneksel bankalar tercih edilebilir. Kullanıcı yorumları ve şikâyet platformları da banka seçiminde yol gösterici olabilir. Unutmayın: en düşük faiz her zaman en uygun maliyet anlamına gelmez, tüm masrafları hesaba katın.</p>
-            </article>
+<script>
+const $=x=>document.getElementById(x);
+const money=n=>new Intl.NumberFormat('tr-TR',{style:'currency',currency:'TRY',maximumFractionDigits:0}).format(n);
 
-            <article class="article" id="kredi-turleri">
-                <h3>Kredi türleri karşılaştırması</h3>
-                <p>Temel kredi türleri (ihtiyaç, konut, taşıt, ticari, dijital) arasında vade, faiz, teminat ve kullanım amacı açısından önemli farklar vardır. İhtiyaç kredisi teminatsız ve kısa-orta vadeli, konut kredisi ipotekli ve uzun vadeli, taşıt kredisi araç rehinli ve orta vadeli, ticari kredi işletme odaklı ve esnek, dijital kredi ise hızlı ve küçük tutarlıdır. Hangi türün size uygun olduğuna karar verirken ihtiyacınızı, geri ödeme kapasitenizi ve risk tercihinizi göz önünde bulundurun. NakdiKredi tüm bu türler için hesaplama imkânı sunarak karar sürecinizi destekler.</p>
-            </article>
+function sync(sourceId, targetId) {
+    let val = $(sourceId).value;
+    $(targetId).value = val;
+    if(sourceId==='amount' || sourceId==='sliderAmount') $('valAmount').textContent = money(val);
+    if(sourceId==='rate') $('valRate').textContent = '%' + val;
+}
 
-            <article class="article" id="gelir">
-                <h3>Gelire göre kredi belirleme</h3>
-                <p>Genel finansal kural, aylık taksit ödemelerinin aylık net gelirin %30’unu geçmemesidir. Bu oran, diğer yaşam giderleri, kira, mutfak, faturalar ve acil durumlar için yeterli bütçe kalmasını sağlar. Örneğin aylık geliri 40.000 TL olan bir kişi için maksimum aylık taksit 12.000 TL civarı olmalıdır. Buna göre maksimum kredi tutarı hesaplanabilir. NakdiKredi’nin “aylık gelir” alanına bu bilgiyi girdiğinizde, size önerilen maksimum kredi tutarını gösterir. Ancak bu sadece bir önermedir; kendi kişisel harcamalarınız ve borçlarınızla birlikte değerlendirme yapmanız önemlidir.</p>
-            </article>
+function syncRangeToSelect(rangeId, selectId) {
+    let rangeVal = parseInt($(rangeId).value);
+    let select = $(selectId);
+    let options = Array.from(select.options).map(o => parseInt(o.value));
+    let closest = options.reduce((prev, curr) => Math.abs(curr - rangeVal) < Math.abs(prev - rangeVal) ? curr : prev);
+    select.value = closest;
+    $('valTerm').textContent = closest + " Ay";
+}
 
-            <article class="article" id="sigorta">
-                <h3>Kredi sigortası nedir?</h3>
-                <p>Kredi sigortası, krediyi kullanan kişinin ölüm, kaza veya işsizlik gibi durumlarda kredi borcunun sigorta şirketi tarafından ödenmesini sağlayan bir güvencedir. Özellikle konut ve taşıt kredilerinde zorunlu tutulabilir. Hayat sigortası, konut sigortası (DASK), kasko gibi farklı sigorta türleri krediye bağlı olarak devreye girer. Bu sigortaların primleri toplam kredi maliyetini artırır, bu nedenle hesaplama yaparken sigorta masraflarını da dikkate almak gerekir. Bazı bankalar sigortayı zorunlu tutmazken, bazıları zorunlu kılar. Sigortası olmayan krediler daha düşük toplam maliyet sunabilir, ancak risklere karşı kendinizi korumak için en azından hayat sigortası yaptırmak akıllıca olabilir.</p>
-            </article>
-        </div>
-    </section>
+function calculate(){
+    let P = +$('amount').value || 0;
+    let r = +$('rate').value || 0;
+    let n = +$('term').value || 12;
+    let inc = +$('income').value || 0;
+    let hasTaxes = $('taxes').checked;
+    
+    // KKDF (%15) + BSMV (%15) = %30 Vergi Çarpanı
+    let taxMultiplier = hasTaxes ? 1.30 : 1.0;
+    let i = (r / 100) * taxMultiplier; 
+    let pureRate = r / 100;
+    
+    let p = i ? P * i * Math.pow(1+i,n)/(Math.pow(1+i,n)-1) : P/n;
+    let total = p * n;
+    let totalCost = total - P;
+    
+    $('monthly').textContent = money(p);
+    $('total').textContent = money(total);
+    $('interest').textContent = money(totalCost);
+    
+    // Visual Bar
+    let pPct = (P / total) * 100;
+    let iPct = (totalCost / total) * 100;
+    $('barP').style.width = pPct + "%";
+    $('barI').style.width = iPct + "%";
+    $('legendP').textContent = "%" + Math.round(pPct);
+    $('legendI').textContent = "%" + Math.round(iPct);
 
-    <!-- BLOG (tam metin yazılar) -->
-    <section id="blog" class="section alt">
-        <div class="wrap">
-            <div class="ey">GÜNCEL KREDİ BLOGU</div>
-            <h2>En son kredi haberleri ve ipuçları.</h2>
-            <div class="cards">
-                <div class="mini">
-                    <span style="background:var(--g2);color:#fff;padding:2px 12px;border-radius:99px;font-size:8px;display:inline-block;">Örnek</span>
-                    <h3>2026 Kredi Faiz Oranları – Örnek Senaryo</h3>
-                    <p>2026 yılında Merkez Bankası’nın politika faizlerinde değişiklikler olabilir. Bu yazıda olası senaryolara göre ihtiyaç, konut ve taşıt kredisi faiz oranlarının nasıl şekillenebileceğini, ekonomistlerin yorumlarıyla birlikte ele alıyoruz. Örneğin, politika faizinin %5 seviyesinde olduğu bir ortamda ihtiyaç kredisi faizleri %3,5-5,0 arası, konut kredisi %2,0-3,5 arası, taşıt kredisi ise %2,5-4,5 arası olabilir. Ancak bu oranlar bankaların fonlama maliyetine, rekabete ve kredi riskine göre değişir. Bu nedenle en güncel oranlar için banka web sitelerini ziyaret etmeniz önerilir.</p>
-                </div>
-                <div class="mini">
-                    <span style="background:var(--g2);color:#fff;padding:2px 12px;border-radius:99px;font-size:8px;display:inline-block;">Rehber</span>
-                    <h3>Kredi Notu Yükseltme Taktiği</h3>
-                    <p>Kredi notunuzu 100 puan yükseltmek için 5 basit adım: 1) Kredi kartı borcunu asgari tutardan fazla ödeyin, 2) Faturaları vadesinde ödeyin, 3) Kullanılmayan kredi kartlarını kapatın, 4) Kredi limitini aşmayın, 5) Kısa sürede çok fazla kredi başvurusu yapmayın. Bu adımları izleyerek 6 ay içinde notunuzda gözle görülür bir artış görebilirsiniz. Yüksek kredi notu, daha düşük faiz oranları ve daha yüksek limitler demektir. Ayrıca notunuzu düzenli olarak Findeks üzerinden kontrol edin, hatalı kayıtlar varsa düzeltme talebinde bulunun.</p>
-                </div>
-                <div class="mini">
-                    <span style="background:var(--g2);color:#fff;padding:2px 12px;border-radius:99px;font-size:8px;display:inline-block;">Karşılaştırma</span>
-                    <h3>En Düşük Faizli Banka Hangisi? – Örnek Karşılaştırma</h3>
-                    <p>Mart 2026 itibarıyla (örnek veriler) Akbank, Garanti, Yapı Kredi, İş Bankası ve Ziraat Bankası’nın ihtiyaç kredisi faiz oranları sırasıyla %3,45, %3,29, %3,55, %3,40 ve %3,15 olarak varsayılmıştır. Ancak bu oranlar dosya masrafı, sigorta ve diğer masrafları içermez. Tam maliyet için APR oranlarına bakmak gerekir. Örneğin Ziraat Bankası’nın APR’si %3,45, Garanti’nin %3,60 olabilir. En düşük faizli banka her zaman en düşük maliyetli değildir. Bu nedenle her bankanın detaylı teklifini karşılaştırmanızı öneririz. Ayrıca müşteri hizmetleri, şube ağı ve dijital kanallar da seçimde etkili olabilir.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SSS (15 soru cevap) -->
-    <section id="sss" class="section">
-        <div class="wrap">
-            <div class="ey">SIK SORULAN SORULAR</div>
-            <h2>Kredi hakkında merak ettiğin her şey.</h2>
-            <div class="faq">
-                <details open><summary>Kredi taksiti nasıl hesaplanır?</summary><p class="muted">Kredi tutarı, aylık faiz oranı ve vade kullanılarak eşit taksit formülüyle hesaplanır. Formül: Taksit = (Tutar × faiz) / (1 - (1+faiz)^(-vade)). Aracımız bunu otomatik yapar.</p></details>
-                <details><summary>100.000 TL kredinin aylık taksiti ne kadar?</summary><p class="muted">Vade ve faiz oranına bağlıdır. Örneğin 36 ay, %3,19 faizle aylık taksit yaklaşık 4.500 TL; 60 ay, %3,19 ile 3.500 TL civarındadır. Hesaplayıcı ile görebilirsiniz.</p></details>
-                <details><summary>Vade uzarsa toplam maliyet artar mı?</summary><p class="muted">Evet, aylık taksit düşer ancak toplam ödenen faiz artar, dolayısıyla toplam geri ödeme artar. Uzun vade düşük taksit isteyenler için, kısa vade toplam maliyeti azaltmak isteyenler için uygundur.</p></details>
-                <details><summary>Erken ödeme avantajlı mı?</summary><p class="muted">Evet, kalan faizden kurtulursunuz, ancak bankalar erken kapama ücreti (%1-2) alabilir. Simülasyonumuzla avantajı net görebilirsiniz.</p></details>
-                <details><summary>Kredi notu düşükse kredi çıkar mı?</summary><p class="muted">Bankalar kendi kriterlerine göre değerlendirir. Düşük not, ret olasılığını artırır ancak bazı bankalar düşük notlu müşterilere daha yüksek faizle kredi verebilir.</p></details>
-                <details><summary>Konut kredisi için en uygun vade nedir?</summary><p class="muted">Genelde 120-180 ay önerilir. 240 ay taksitleri çok düşürür ama toplam faiz yükü ciddi şekilde artar. Bütçenize ve toplam maliyet hedefinize göre seçim yapın.</p></details>
-                <details><summary>Taşıt kredisi çekerken nelere dikkat edilmeli?</summary><p class="muted">Araç yaşı (0-3 yaş düşük faiz), kasko zorunluluğu, vade seçeneği (48 ay genelde), toplam maliyet, dosya masrafı ve sigorta primleri.</p></details>
-                <details><summary>Kredi başvurusu kaç gün sürer?</summary><p class="muted">Dijital başvurular dakikalar içinde sonuçlanır, şube başvuruları 1-3 iş günü sürebilir. Evrak tam ve eksiksiz olmalıdır.</p></details>
-                <details><summary>Kredi reddedilirse ne yapmalı?</summary><p class="muted">Red sebebini öğrenin (genelde not düşüklüğü, gelir yetersizliği). Kredi notunu yükseltmek için önerileri uygulayın, başka bir bankayı deneyin veya daha düşük tutarla başvurun.</p></details>
-                <details><summary>Faizsiz kredi gerçekten sıfır maliyet mi?</summary><p class="muted">Hayır, dosya masrafı, sigorta, tahsis ücreti gibi ek masraflar olabilir. Toplam geri ödeme tutarına mutlaka bakın.</p></details>
-                <details><summary>Kredi sigortası zorunlu mu?</summary><p class="muted">Bazı kredilerde (konut, taşıt) zorunlu olabilir. İhtiyaç kredisinde genelde isteğe bağlıdır. Zorunlu olmadığı durumlarda sigorta yaptırmak risklere karşı koruma sağlar.</p></details>
-                <details><summary>Gelirimin ne kadarı kredi taksidine gitmeli?</summary><p class="muted">Genel kural %30’u geçmemesidir. Aracımız gelirinizi girerseniz size maksimum öneri sunar.</p></details>
-                <details><summary>Kredi notumu nasıl yükseltebilirim?</summary><p class="muted">Faturaları zamanında ödeyin, kredi kartı limitini aşmayın, borçları düzenli ödeyin, çok fazla başvuru yapmayın, kullanılmayan kartları kapatın.</p></details>
-                <details><summary>NakdiKredi bir banka mı?</summary><p class="muted">Hayır, bağımsız bir kredi hesaplama ve bilgi platformudur. Herhangi bir banka veya finans kuruluşu ile bağlantısı yoktur.</p></details>
-                <details><summary>Hesaplama sonuçları kesin mi?</summary><p class="muted">Hayır, tahminidir. Resmi ve kesin teklif için ilgili bankaya başvurmanız gerekir. Bu araç bilgilendirme amaçlıdır.</p></details>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="wrap">
-            <strong style="font-size:21px;color:#fff">NakdiKredi.com</strong>
-            <p>Kredi hesaplama • İhtiyaç kredisi • Konut kredisi • Taşıt kredisi • Ticari kredi • Kredi faiz hesaplama • Erken ödeme • Kredi notu • Kredi karşılaştırma</p>
-            <p>Buradaki hesaplamalar bilgilendirme amaçlı tahminlerdir. Güncel ve kesin kredi koşulları için ilgili finans kuruluşunun resmi bilgileri esas alınmalıdır.</p>
-            <p>© 2026 NakdiKredi.com – Tüm hakları saklıdır.</p>
-        </div>
-    </footer>
-
-    <!-- MOBILE NAV -->
-    <div class="mobile">
-        <a href="#hesapla">⌁<br>Hesapla</a>
-        <a href="#kredi-turleri">▦<br>Türler</a>
-        <a href="#rehber">≡<br>Rehber</a>
-        <a href="#sss">?<br>SSS</a>
-    </div>
-
-    <!-- ===== JAVASCRIPT (TÜM ÖZELLİKLERLE) ===== -->
-    <script>
-        const $ = id => document.getElementById(id);
-        const money = n => new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY', maximumFractionDigits: 2 })
-            .format(n);
-        const round = (v, d = 2) => Number(v.toFixed(d));
-
-        function calc(P, r, n) {
-            let i = r / 100,
-                p = i ? P * i * Math.pow(1 + i, n) / (Math.pow(1 + i, n) - 1) : P / n,
-                b = P,
-                rows = [],
-                cum = 0;
-            for (let m = 1; m <= n; m++) {
-                let interest = b * i,
-                    principal = Math.min(p - interest, b);
-                b = Math.max(0, b - principal);
-                cum += interest;
-                rows.push({ m, p: round(p), interest: round(interest), principal: round(principal), b: round(b), cum: round(
-                        cum) });
-            }
-            return { p: round(p), rows };
+    // Gelir & Risk Analizi
+    if(inc > 0) {
+        let ratio = (p / inc) * 100;
+        let alertBox = $('healthAlert');
+        if(ratio > 50) {
+            alertBox.className = "notice danger";
+            alertBox.innerHTML = `⚠️ <b>Kredi Onay Riski: Yüksek.</b> Taksit tutarı (${money(p)}), aylık gelirinizin <b>%${Math.round(ratio)}'sine</b> denk geliyor. BDDK ve banka kurallarına göre taksit gelirin %50'sini geçmemelidir. Vadeyi uzatmayı veya tutarı düşürmeyi deneyin.`;
+        } else if (ratio > 40) {
+            alertBox.className = "notice info";
+            alertBox.innerHTML = `⚠️ <b>Kredi Onay Riski: Orta.</b> Taksit tutarı, gelirinizin <b>%${Math.round(ratio)}'sine</b> denk geliyor. Başka borcunuz yoksa onaylanma ihtimali var.`;
+        } else {
+            alertBox.className = "notice success";
+            alertBox.innerHTML = `✅ <b>Kredi Onay İhtimali: Yüksek.</b> Taksit tutarı, gelirinizin sadece <b>%${Math.round(ratio)}'si</b>. Gelir açısından rahatça onaylanabilir.`;
         }
+    } else {
+        $('healthAlert').className = "notice info";
+        $('healthAlert').innerHTML = "Gelir durumunuza göre onay ihtimalini görmek için aylık gelirinizi girin.";
+    }
 
-        function calculate() {
-            let P = +$('amount').value || 0,
-                r = +$('rate').value || 0,
-                n = +$('term').value || 12,
-                inc = +$('income').value || 0;
-            if (P <= 0 || r <= 0 || n < 1) { alert('Lütfen geçerli değerler girin.'); return; }
-            const x = calc(P, r, n);
-            const total = x.p * n;
-            $('monthly').textContent = money(x.p);
-            $('total').textContent = money(total);
-            $('interest').textContent = money(total - P);
-            $('summary').textContent =
-                `${money(P)} kredi, ${n} ay vade ve aylık %${r.toFixed(2)} faiz → aylık taksit ${money(x.p)}, toplam geri ödeme ${money(total)}.`;
+    // Amortisman Tablosu
+    let b = P;
+    let rows = [];
+    for(let m=1; m<=n; m++){
+        let pureInterest = b * pureRate;
+        let taxes = hasTaxes ? (pureInterest * 0.30) : 0;
+        let totalInterestThisMonth = pureInterest + taxes;
+        let principal = p - totalInterestThisMonth;
+        b = Math.max(0, b - principal);
+        
+        rows.push(`<tr>
+            <td>${m}. Ay</td>
+            <td><b>${money(p)}</b></td>
+            <td>${money(principal)}</td>
+            <td>${money(pureInterest)}</td>
+            <td>${money(taxes)}</td>
+            <td>${money(b)}</td>
+        </tr>`);
+    }
+    $('schedule').innerHTML = rows.join('');
+    
+    // Özet Metni
+    $('summary').textContent = `${money(P)} tutarındaki krediyi %${r.toFixed(2)} faiz ve ${n} ay vade ile çektiğinizde, ${hasTaxes?'vergiler dahil ':''}aylık taksitiniz ${money(p)}, toplam geri ödemeniz ise ${money(total)} olur.`;
+}
 
-            $('schedule').innerHTML = x.rows.map(z =>
-                `<tr><td>${z.m}. ay</td><td>${money(z.p)}</td><td>${money(z.principal)}</td><td>${money(z.interest)}</td><td>${money(z.b)}</td><td>${money(z.cum)}</td></tr>`
-            ).join('');
+function quick(v){
+    $('amount').value = v;
+    $('sliderAmount').value = v;
+    sync('amount', 'sliderAmount');
+    calculate();
+    location.hash = 'hesapla';
+}
 
-            renderVadeKarsilastirma(P, r);
-            renderPopulerTablo(r, n);
+function share(){
+    let u = new URL(location.href);
+    u.searchParams.set('tutar', $('amount').value);
+    u.searchParams.set('vade', $('term').value);
+    u.searchParams.set('faiz', $('rate').value);
+    u.searchParams.set('gelir', $('income').value);
+    if(navigator.clipboard) navigator.clipboard.writeText(u.toString()).then(()=>alert('Senaryo kopyalandı.'));
+    else alert(u.toString());
+}
 
-            if (inc > 0) {
-                let maxTaksit = inc * 0.3;
-                let i = r / 100;
-                let maxP = maxTaksit * (Math.pow(1 + i, n) - 1) / (i * Math.pow(1 + i, n));
-                if (maxP > 0) {
-                    $('maxLoanAdvice').innerHTML =
-                        `💰 <strong>Gelir önerisi:</strong> Aylık ${money(inc)} gelirle, %30 taksit oranına göre maksimum kredi tutarınız yaklaşık <strong>${money(maxP)}</strong> olabilir.`;
-                } else {
-                    $('maxLoanAdvice').innerHTML = '';
-                }
-            } else {
-                $('maxLoanAdvice').innerHTML = '';
-            }
-
-            drawCharts(x.rows, P);
-            simulateEarlyPayment();
-        }
-
-        function renderVadeKarsilastirma(P, r) {
-            const container = document.getElementById('vadeKarsilastirma');
-            const vadeler = [6, 12, 24, 36, 48, 60];
-            let html = '';
-            vadeler.forEach(v => {
-                const sonuc = calc(P, r, v);
-                const toplam = sonuc.p * v;
-                html += `<div class="compare-item">
-                            <strong>${v} ay</strong>
-                            <small>Taksit ${money(sonuc.p)}</small>
-                            <small>Toplam ${money(toplam)}</small>
-                            <small>Faiz ${money(toplam - P)}</small>
-                        </div>`;
-            });
-            container.innerHTML = html;
-        }
-
-        function renderPopulerTablo(r, n) {
-            const container = document.getElementById('populerTablo');
-            const tutarlar = [50000, 100000, 150000, 200000, 250000, 500000, 750000, 1000000];
-            let html = '';
-            tutarlar.forEach(t => {
-                const sonuc = calc(t, r, n);
-                const toplam = sonuc.p * n;
-                html += `<div class="populer-item" onclick="quick(${t})">
-                            <strong>${money(t)}</strong>
-                            <small>${money(sonuc.p)} / ay</small>
-                            <small>Toplam ${money(toplam)}</small>
-                        </div>`;
-            });
-            container.innerHTML = html;
-        }
-
-        function drawCharts(rows, P) {
-            const canvas = document.getElementById('chartCanvas');
-            const ctx = canvas.getContext('2d');
-            const w = canvas.width,
-                h = canvas.height;
-            ctx.clearRect(0, 0, w, h);
-            if (rows.length === 0) return;
-            const maxVal = Math.max(...rows.map(r => r.p));
-            const barWidth = w / rows.length * 0.7;
-            const gap = w / rows.length * 0.3;
-            const offset = 20;
-            for (let i = 0; i < rows.length; i++) {
-                const x = i * (barWidth + gap) + gap / 2;
-                const hAnapara = (rows[i].principal / maxVal) * (h - 40);
-                const hFaiz = (rows[i].interest / maxVal) * (h - 40);
-                ctx.fillStyle = '#087c4d';
-                ctx.fillRect(x, h - 20 - hAnapara - hFaiz, barWidth, hAnapara);
-                ctx.fillStyle = '#c0392b';
-                ctx.fillRect(x, h - 20 - hFaiz, barWidth, hFaiz);
-            }
-            ctx.strokeStyle = '#ccc';
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(0, h - 20);
-            ctx.lineTo(w, h - 20);
-            ctx.stroke();
-
-            const canvas2 = document.getElementById('balanceChart');
-            const ctx2 = canvas2.getContext('2d');
-            const w2 = canvas2.width,
-                h2 = canvas2.height;
-            ctx2.clearRect(0, 0, w2, h2);
-            ctx2.strokeStyle = '#064c32';
-            ctx2.lineWidth = 2.5;
-            ctx2.beginPath();
-            const stepX = w2 / (rows.length - 1);
-            for (let i = 0; i < rows.length; i++) {
-                const y = (rows[i].b / P) * (h2 - 30);
-                const x = i * stepX;
-                if (i === 0) ctx2.moveTo(x, h2 - 20 - y);
-                else ctx2.lineTo(x, h2 - 20 - y);
-            }
-            ctx2.stroke();
-            ctx2.fillStyle = 'rgba(8,124,77,0.1)';
-            ctx2.beginPath();
-            ctx2.moveTo(0, h2 - 20);
-            for (let i = 0; i < rows.length; i++) {
-                const y = (rows[i].b / P) * (h2 - 30);
-                const x = i * stepX;
-                ctx2.lineTo(x, h2 - 20 - y);
-            }
-            ctx2.lineTo(w2, h2 - 20);
-            ctx2.closePath();
-            ctx2.fill();
-        }
-
-        function simulateEarlyPayment() {
-            const earlyMonth = parseInt($('earlyMonth').value) || 1;
-            let P = +$('amount').value || 0,
-                r = +$('rate').value || 0,
-                n = +$('term').value || 12;
-            if (P <= 0 || r <= 0 || n < 1) return;
-            const full = calc(P, r, n);
-            const totalFull = full.p * n;
-            const totalInterestFull = totalFull - P;
-            let paidUpTo = 0,
-                interestPaidUpTo = 0;
-            for (let i = 0; i < earlyMonth && i < full.rows.length; i++) {
-                paidUpTo += full.rows[i].p;
-                interestPaidUpTo += full.rows[i].interest;
-            }
-            if (earlyMonth <= full.rows.length) {
-                const remainingAfterEarly = full.rows[earlyMonth - 1].b;
-                const earlyFee = remainingAfterEarly * 0.02;
-                const totalEarlyCost = paidUpTo + remainingAfterEarly + earlyFee;
-                const earlyInterest = interestPaidUpTo;
-                const savedInterest = totalInterestFull - earlyInterest;
-                document.getElementById('earlyResult').innerHTML = `
-                            <strong>${earlyMonth}. ayda erken kapatırsanız:</strong><br>
-                            Kalan anapara: ${money(remainingAfterEarly)}<br>
-                            Yaklaşık erken kapama ücreti (%2): ${money(earlyFee)}<br>
-                            Toplam ödemiş olacağınız: ${money(totalEarlyCost)}<br>
-                            O zamana kadar ödenen faiz: ${money(earlyInterest)}<br>
-                            <span style="color:#087c4d;">✔ Kalan vadede ödeyeceğiniz faizden kurtulursunuz: ${money(savedInterest)}</span>
-                            (Tahmini, kesin tutar bankanıza göre değişir)
-                        `;
-            } else {
-                document.getElementById('earlyResult').innerHTML = 'Girdiğiniz ay vadeden büyük. Lütfen geçerli bir ay girin.';
-            }
-        }
-
-        function quick(v) {
-            $('amount').value = v;
-            calculate();
-            location.hash = 'hesapla';
-        }
-
-        function share() {
-            const u = new URL(location.href);
-            u.searchParams.set('tutar', $('amount').value);
-            u.searchParams.set('vade', $('term').value);
-            u.searchParams.set('faiz', $('rate').value);
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(u.toString()).then(() => alert('Senaryo bağlantısı kopyalandı.'));
-            } else {
-                alert(u.toString());
-            }
-        }
-
-        function exportCSV() {
-            const rows = document.querySelectorAll('#schedule tr');
-            if (rows.length === 0) { alert('Önce hesaplama yapın.'); return; }
-            let csv = 'Ay,Taksit,Anapara,Faiz,Kalan Borç,Kümülatif Faiz\n';
-            rows.forEach(row => {
-                const cols = row.querySelectorAll('td');
-                if (cols.length) {
-                    csv += [...cols].map(td => td.textContent.trim().replace(/\./g, '').replace(',', '.')).join(',') +
-                        '\n';
-                }
-            });
-            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'kredi_ödeme_planı.csv';
-            link.click();
-        }
-
-        function updateRateHint() {
-            const tur = $('krediTuru').value;
-            const hint = document.getElementById('rateHint');
-            const rateInput = $('rate');
-            const suggestions = {
-                ihtiyac: 'İhtiyaç kredisi için örnek oran %3,19',
-                konut: 'Konut kredisi için örnek oran %2,49',
-                tasit: 'Taşıt kredisi için örnek oran %2,99',
-                ticari: 'Ticari kredi için örnek oran %3,49'
-            };
-            hint.textContent = suggestions[tur] || '';
-            const sampleRates = { ihtiyac: 3.19, konut: 2.49, tasit: 2.99, ticari: 3.49 };
-            if (sampleRates[tur] && !rateInput.dataset.userChanged) {
-                rateInput.value = sampleRates[tur];
-            }
-        }
-
-        (function() {
-            const q = new URLSearchParams(location.search);
-            if (q.get('tutar')) $('amount').value = q.get('tutar');
-            if (q.get('vade')) $('term').value = q.get('vade');
-            if (q.get('faiz')) $('rate').value = q.get('faiz');
-            $('rate').addEventListener('input', function() { this.dataset.userChanged = 'true'; });
-            $('krediTuru').addEventListener('change', updateRateHint);
-            updateRateHint();
-            calculate();
-            $('earlyMonth').addEventListener('input', simulateEarlyPayment);
-        })();
-    </script>
+// Başlangıç
+(function(){
+    let q=new URLSearchParams(location.search);
+    if(q.get('tutar')) { $('amount').value=q.get('tutar'); $('sliderAmount').value=q.get('tutar'); }
+    if(q.get('vade')) { $('term').value=q.get('vade'); $('sliderTerm').value=q.get('vade'); }
+    if(q.get('faiz')) $('rate').value=q.get('faiz');
+    if(q.get('gelir')) $('income').value=q.get('gelir');
+    
+    sync('amount', 'sliderAmount');
+    syncRangeToSelect('sliderTerm','term');
+    calculate();
+})();
+</script>
 </body>
 </html>
